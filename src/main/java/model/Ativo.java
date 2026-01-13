@@ -58,4 +58,12 @@ public abstract class Ativo {
     public Origem getOrigem() {
         return origem;
     }
+
+    public void atualizarPreco(BigDecimal precoNovo) {
+        if (precoNovo == null || precoNovo.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new AtivoInvalidoException("Novo preço deve ser maior que zero.");
+        }
+
+        this.precoAtual = precoNovo;
+    }
 }
