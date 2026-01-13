@@ -2,12 +2,12 @@ package model;
 import java.math.BigDecimal;
 
 public abstract class Ativo {
-    private String nome;
-    private String ticker;
+    private final String nome;
+    private final String ticker;
     private BigDecimal precoAtual; // não vamos usar double para evitar imprecisão
-    private boolean restritoQualificados;
-    private TipoRenda tipoRenda; // fixa/variável
-    private Origem origem; // nacional/internacional;
+    private final boolean restritoQualificados;
+    private final TipoRenda tipoRenda; // fixa/variável
+    private final Origem origem; // nacional/internacional;
 
     public Ativo(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, TipoRenda tipoRenda, Origem origem) {
         if (nome == null || nome.isBlank()) {
