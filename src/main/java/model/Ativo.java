@@ -37,4 +37,25 @@ public abstract class Ativo {
         this.tipoRenda = tipoRenda;
         this.origem = origem;
     }
+
+
+    public String getTicker() {
+        return ticker;
+    }
+
+    public BigDecimal getPrecoAtual() {
+        return precoAtual;
+    }
+
+    public boolean isRestritoQualificados() {
+        return restritoQualificados;
+    }
+
+    public TipoRenda getTipoRenda() {
+        return tipoRenda;
+    }
+
+    public Origem getOrigem() {
+        return origem;
+    }
 }
