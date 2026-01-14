@@ -21,5 +21,17 @@ public class Acao extends Ativo{
             return TipoAcao.UNIT;
         }
 
+        char ultimo = t.charAt(t.length() - 1);
+        if (ultimo == '3') {
+            return TipoAcao.ORDINARIA;
+        }
+        if (ultimo == '4' || ultimo == '5' || ultimo == '6') {
+            return TipoAcao.PREFERENCIAL;
+        }
+
+        // considera invalido se nao se encaixar em nenhum dos tipos
+        throw new AtivoInvalidoException("Ticker de ação inválido: " + ticker);
     }
+
+
 }
