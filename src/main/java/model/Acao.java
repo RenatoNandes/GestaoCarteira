@@ -13,4 +13,13 @@ public class Acao extends Ativo{
     public String getTipoAcao() {
         return tipoAcao;
     }
+
+    private String definirTipoPeloTicker(String ticker) {
+        String t = ticker.trim().toUpperCase();
+
+        if (t.endsWith("11")) {
+            return TipoAcao.UNIT;
+        }
+
+    }
 }
