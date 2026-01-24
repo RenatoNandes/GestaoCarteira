@@ -1,5 +1,7 @@
 package model;
 
+import exception.AtivoInvalidoException;
+
 import java.math.BigDecimal;
 
 public class Stock extends Ativo {
@@ -46,4 +48,17 @@ public class Stock extends Ativo {
     public BigDecimal getFatorConversao() {
         return fatorConversao;
     }
+
+    @Override
+    public BigDecimal converterParaReal() {
+        return getPrecoAtual().multiply(fatorConversao);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Stock: %s (%s) - Setor: %s - Bolsa: %s - US$ %s (~R$ %s)",
+                getNome(), getTicker(), setor, bolsaNegociacao,
+                getPrecoAtual(), converterParaReal());
+    }
+
 }
