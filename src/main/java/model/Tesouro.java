@@ -1,46 +1,48 @@
 package model;
 
+import exception.AtivoInvalidoException;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
 
 public class Tesouro extends Ativo {
 
-    private final String tipoRendimento;
+    private final TipoRendimento tipoRendimento;
     private final LocalDate dataVencimento;
 
     public Tesouro(String nome,
                    String ticker,
                    BigDecimal precoAtual,
                    boolean restritoQualificados,
-                   String tipoRendimento,
+                   TipoRendimento tipoRendimento,
                    LocalDate dataVencimento) {
 
         super(nome, ticker, precoAtual, restritoQualificados, TipoRenda.FIXA, Origem.NACIONAL);
 
-        if (tipoRendimento == null || tipoRendimento.isBlank()) {
-            throw new AtivoInvalidoException("Tipo de rendimento do Tesouro não pode ser nulo ou vazio.");
-        }
-
-        String tr = tipoRendimento.trim().toUpperCase();
-        if (!tr.equals(TipoRendimento.SELIC)
-                && !tr.equals(TipoRendimento.PREFIXADO)
-                && !tr.equals(TipoRendimento.IPCA_MAIS)) {
-            throw new AtivoInvalidoException("Tipo de rendimento inválido: " + tipoRendimento);
+        if (tipoRendimento == null) {
+            throw new AtivoInvalidoException("Tipo de rendimento do Tesouro não pode ser nulo.");
         }
 
         if (dataVencimento == null) {
             throw new AtivoInvalidoException("Data de vencimento do Tesouro não pode ser nula.");
         }
 
-        this.tipoRendimento = tr;
+        this.tipoRendimento = tipoRendimento;
         this.dataVencimento = dataVencimento;
     }
 
-    public String getTipoRendimento() {
+    public TipoRendimento getTipoRendimento() {
         return tipoRendimento;
     }
 
     public LocalDate getDataVencimento() {
         return dataVencimento;
     }
+
+    @Override
+    public String toString() {
+        return String.format("Tesouro: %s (%s) - Tipo: %s - Vencimento: %s - R$ %s",
+                getNome(), getTicker(), tipoRendimento, dataVencimento, getPrecoAtual());
+    }
+
 }
