@@ -1,5 +1,7 @@
 package model;
 
+import exception.AtivoInvalidoException;
+
 import java.math.BigDecimal;
 
 public class Criptomoeda extends Ativo {
@@ -46,4 +48,17 @@ public class Criptomoeda extends Ativo {
     public BigDecimal getFatorConversao() {
         return fatorConversao;
     }
+
+    @Override
+    public BigDecimal converterParaReal() {
+        return getPrecoAtual().multiply(fatorConversao);
+    }
+
+    @Override
+    public String toString() {
+        return String.format("Cripto: %s (%s) - Algoritmo: %s - US$ %s (~R$ %s)",
+                getNome(), getTicker(), algoritmoConsenso,
+                getPrecoAtual(), converterParaReal());
+    }
+
 }
