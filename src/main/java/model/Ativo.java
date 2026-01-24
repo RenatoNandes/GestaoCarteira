@@ -1,4 +1,7 @@
 package model;
+
+import exception.AtivoInvalidoException;
+
 import java.math.BigDecimal;
 
 public abstract class Ativo {
@@ -38,6 +41,9 @@ public abstract class Ativo {
         this.origem = origem;
     }
 
+    public String getNome() {
+        return nome;
+    }
 
     public String getTicker() {
         return ticker;
@@ -66,4 +72,15 @@ public abstract class Ativo {
 
         this.precoAtual = precoNovo;
     }
+
+    // metodo padrão, nacionais retornam o preço atual
+    public BigDecimal converterParaReal() {
+        return precoAtual;
+    }
+
+    @Override
+    public String toString() {
+        return String.format("%s (%s) - R$ %s", nome, ticker, precoAtual);
+    }
+
 }
