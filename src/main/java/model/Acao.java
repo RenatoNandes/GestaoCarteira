@@ -2,19 +2,20 @@ package model;
 
 import java.math.BigDecimal;
 
-public class Acao extends Ativo{
-    private final String tipoAcao;
+public class Acao extends Ativo {
+
+    private final TipoAcao tipoAcao;
 
     public Acao(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados) {
         super(nome, ticker, precoAtual, restritoQualificados, TipoRenda.VARIAVEL, Origem.NACIONAL);
         this.tipoAcao = definirTipoPeloTicker(ticker);
     }
 
-    public String getTipoAcao() {
+    public TipoAcao getTipoAcao() {
         return tipoAcao;
     }
 
-    private String definirTipoPeloTicker(String ticker) {
+    private TipoAcao definirTipoPeloTicker(String ticker) {
         String t = ticker.trim().toUpperCase();
 
         if (t.endsWith("11")) {
@@ -29,9 +30,7 @@ public class Acao extends Ativo{
             return TipoAcao.PREFERENCIAL;
         }
 
-        // considera invalido se nao se encaixar em nenhum dos tipos
+        //se nao encixa em nenhum lugar eh invalido
         throw new AtivoInvalidoException("Ticker de ação inválido: " + ticker);
     }
-
-
 }
