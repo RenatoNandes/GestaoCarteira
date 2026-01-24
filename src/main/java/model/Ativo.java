@@ -6,7 +6,7 @@ public abstract class Ativo {
     private final String ticker;
     private BigDecimal precoAtual; // não vamos usar double para evitar imprecisão
     private final boolean restritoQualificados;
-    private final TiporENDA tipoRenda; // fixa/variável
+    private final TipoRenda tipoRenda; // fixa/variável
     private final Origem origem; // nacional/internacional;
 
     public Ativo(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, TipoRenda tipoRenda, Origem origem) {
