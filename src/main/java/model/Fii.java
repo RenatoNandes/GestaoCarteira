@@ -1,5 +1,7 @@
 package model;
 
+import exception.AtivoInvalidoException;
+
 import java.math.BigDecimal;
 
 public class Fii extends Ativo {
