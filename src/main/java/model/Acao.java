@@ -1,5 +1,7 @@
 package model;
 
+import exception.AtivoInvalidoException;
+
 import java.math.BigDecimal;
 
 public class Acao extends Ativo {
@@ -33,4 +35,11 @@ public class Acao extends Ativo {
         //se nao encixa em nenhum lugar eh invalido
         throw new AtivoInvalidoException("Ticker de ação inválido: " + ticker);
     }
+
+    @Override
+    public String toString() {
+        return String.format("Ação: %s (%s) - Tipo: %s - R$ %s",
+                getNome(), getTicker(), tipoAcao, getPrecoAtual());
+    }
+
 }
