@@ -16,7 +16,6 @@ public class Menu {
     private final InfoUtils infoUtils;
     private final AtivoManager ativoManager;
     private final InvestidorManager investidorManager;
-    private Investidor investidorSelecionado;
 
     public Menu(InputUtils inputUtils, InfoUtils infoUtils, AtivoManager ativoManager, InvestidorManager investidorManager) {
         this.inputUtils = inputUtils;
