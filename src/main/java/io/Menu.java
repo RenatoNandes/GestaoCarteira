@@ -324,10 +324,70 @@ public class Menu {
                 case 11 -> {
                     String caminho = infoUtils.lerTexto("Informe o caminho do arquivo CSV de movimentações");
                     try {
-                        inv.getCarteira().carregarMovimentacoesDeArquivo(caminho, ativoManager); // implemente se não existir
-                        System.out.println("Movimentações carregadas.");
-                    } catch (UnsupportedOperationException u) {
-                        System.out.println("Funcionalidade não implementada: " + u.getMessage());
+                        List<String[]> linhas = utils.CsvReader.lerCsv(caminho);
+                        if (linhas == null || linhas.isEmpty()) {
+                            System.out.println("Arquivo vazio ou não encontrado.");
+                            break;
+                        }
+
+                        int ok = 0;
+                        int erro = 0;
+
+                        for (int idx = 0; idx < linhas.size(); idx++) {
+                            String[] cols = linhas.get(idx);
+
+                            try {
+                                String tipo = cols.length > 0 ? cols[0].trim().toUpperCase() : "";
+                                String ticker = cols.length > 1 ? cols[1].trim() : "";
+                                String qtdStr = cols.length > 2 ? cols[2].trim() : "";
+                                String precoStr = cols.length > 3 ? cols[3].trim() : "";
+
+                                if (ticker.isBlank()) throw new IllegalArgumentException("Ticker vazio.");
+                                if (qtdStr.isBlank()) throw new IllegalArgumentException("Quantidade vazia.");
+
+                                BigDecimal quantidade = new BigDecimal(qtdStr.replace(",", "."));
+                                if (quantidade.compareTo(BigDecimal.ZERO) <= 0)
+                                    throw new IllegalArgumentException("Quantidade deve ser > 0.");
+
+                                // procurar ativo pelo ticker no AtivoManager
+                                model.ativo.Ativo ativoAlvo = null;
+                                for (model.ativo.Ativo a : ativoManager.getAtivos()) {
+                                    if (a.getTicker().equalsIgnoreCase(ticker)) {
+                                        ativoAlvo = a;
+                                        break;
+                                    }
+                                }
+                                if (ativoAlvo == null) {
+                                    throw new IllegalArgumentException("Ativo não encontrado no sistema: " + ticker);
+                                }
+
+                                // preço de execução: se vier vazio, usa o preço atual
+                                BigDecimal precoExec = null;
+                                if (!precoStr.isBlank()) {
+                                    precoExec = new BigDecimal(precoStr.replace(",", "."));
+                                    if (precoExec.compareTo(BigDecimal.ZERO) <= 0)
+                                        throw new IllegalArgumentException("Preço de execução deve ser > 0.");
+                                } else {
+                                    precoExec = ativoAlvo.getPrecoAtual();
+                                }
+
+                                if ("C".equals(tipo)) {
+                                    inv.comprar(ativoAlvo, quantidade, precoExec);
+                                } else if ("V".equals(tipo)) {
+                                    inv.vender(ativoAlvo, quantidade);
+                                } else {
+                                    throw new IllegalArgumentException("Tipo inválido (use C ou V): " + tipo);
+                                }
+
+                                ok++;
+                            } catch (Exception e) {
+                                erro++;
+                                System.out.println("Linha " + (idx + 1) + " ignorada: " + e.getMessage());
+                            }
+                        }
+
+                        System.out.println("Movimentações processadas. Sucesso: " + ok + " | Erros: " + erro);
+
                     } catch (Exception e) {
                         System.out.println("Erro ao carregar movimentações: " + e.getMessage());
                     }
