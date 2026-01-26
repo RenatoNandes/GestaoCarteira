@@ -20,7 +20,14 @@ public class CsvReader {
                     primeiraLinha = false;
                     continue;
                 }
+
+                if (linha.isBlank()) continue; // ignora linhas vazias
+
                 String[] campos = linha.split(";");
+                for (int i = 0; i < campos.length; i++) {
+                    campos[i] = campos[i] == null ? "" : campos[i].trim();
+                }
+
                 linhas.add(campos);
             }
         } catch (IOException e) {
