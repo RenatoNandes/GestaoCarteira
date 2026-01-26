@@ -249,6 +249,14 @@ public class Carteira {
         }
     }
 
+    public void definirCustoPosicao(Ativo ativo, java.math.BigDecimal custoEmReal) {
+        if (ativo == null) throw new IllegalArgumentException("Ativo não pode ser nulo.");
+        if (custoEmReal == null || custoEmReal.compareTo(java.math.BigDecimal.ZERO) < 0) {
+            throw new IllegalArgumentException("Custo inválido.");
+        }
+        valorGastoPorAtivo.put(ativo, custoEmReal);
+    }
+
     @Override
     public String toString() {
         StringBuilder sb = new StringBuilder("Carteira:\n");
