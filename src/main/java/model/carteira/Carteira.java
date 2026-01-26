@@ -215,8 +215,8 @@ public class Carteira {
                 }
 
                 if ("C".equals(tipo)) {
-                    java.math.BigDecimal precoUsado = preco != null ? preco : alvo.getPrecoAtual();
-                    adicionarAtivo(alvo, quantidade);
+                    BigDecimal precoUsado = (preco != null ? preco : alvo.getPrecoAtual());
+                    adicionarAtivo(alvo, quantidade, precoUsado);
                     if (preco != null) {
                         java.math.BigDecimal gasto = precoUsado.multiply(quantidade);
                         valorGastoPorAtivo.merge(alvo, gasto, java.math.BigDecimal::add);
