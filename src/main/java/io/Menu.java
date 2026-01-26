@@ -446,10 +446,18 @@ public class Menu {
         for (int i = 0; i < lista.size(); i++) System.out.println((i + 1) + " - " + lista.get(i));
         int escolha = inputUtils.lerOpcao(1, lista.size());
         Ativo ativo = lista.get(escolha - 1);
-        int qtd = inputUtils.lerQuantidade();
-        inv.getCarteira().adicionarAtivo(ativo, BigDecimal.valueOf(qtd));
-        System.out.println("Compra registrada.");
+
+        BigDecimal quantidade = inputUtils.lerBigDecimalPositivo("Quantidade (pode ser decimal): ");
+        BigDecimal precoExec = inputUtils.lerBigDecimalPositivo("Preço de execução: ");
+
+        try {
+            inv.comprar(ativo, quantidade, precoExec);
+            System.out.println("Compra registrada.");
+        } catch (Exception e) {
+            System.out.println("Falha na compra: " + e.getMessage());
+        }
     }
+
 
     private void venderAtivoDoInvestidor(Investidor inv) {
         inv.getCarteira().exibirCarteiraDetalhada();
