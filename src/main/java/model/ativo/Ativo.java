@@ -75,8 +75,16 @@ public abstract class Ativo {
     }
 
     // metodo padrão, nacionais retornam o preço atual
+    public BigDecimal converterValorParaReal(BigDecimal valor) {
+        if (valor == null) {
+            throw new AtivoInvalidoException("Valor para conversão não pode ser nulo.");
+        }
+        return valor; // padrão: nacional
+    }
+
+    // preço atual convertido para real
     public BigDecimal converterParaReal() {
-        return precoAtual;
+        return converterValorParaReal(precoAtual);
     }
 
     @Override
