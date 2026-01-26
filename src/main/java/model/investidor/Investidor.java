@@ -72,12 +72,20 @@ public abstract class Investidor {
         this.patrimonio = novoValor;
     }
 
+    public void comprar(Ativo ativo, BigDecimal quantidade, BigDecimal precoExecucao) {
+        carteira.adicionarAtivo(ativo, quantidade, precoExecucao);
+    }
+
+    public void vender(Ativo ativo, BigDecimal quantidade) {
+        carteira.removerAtivo(ativo, quantidade);
+    }
+
     public void comprar(Ativo ativo, int quantidade) {
-        carteira.adicionarAtivo(ativo, BigDecimal.valueOf(quantidade));
+        comprar(ativo, BigDecimal.valueOf(quantidade), ativo.getPrecoAtual());
     }
 
     public void vender(Ativo ativo, int quantidade) {
-        carteira.removerAtivo(ativo, BigDecimal.valueOf(quantidade));
+        vender(ativo, BigDecimal.valueOf(quantidade));
     }
 
     @Override
