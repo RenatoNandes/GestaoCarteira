@@ -92,4 +92,26 @@ public abstract class Ativo {
         return String.format("%s (%s) - R$ %s", nome, ticker, precoAtual);
     }
 
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null) return false;
+
+        if (getClass() != o.getClass()) return false;
+
+        Ativo other = (Ativo) o;
+        String t1 = (this.getTicker() == null) ? "" : this.getTicker().trim().toUpperCase();
+        String t2 = (other.getTicker() == null) ? "" : other.getTicker().trim().toUpperCase();
+        return t1.equals(t2);
+    }
+
+    @Override
+    public int hashCode() {
+        String t = (this.getTicker() == null) ? "" : this.getTicker().trim().toUpperCase();
+        return 31 * getClass().hashCode() + t.hashCode();
+    }
+
+
 }
+
+
