@@ -14,7 +14,7 @@ import java.util.Map;
 public class Carteira {
 
     private final Map<Ativo, BigDecimal> ativos = new HashMap<>();
-    private final Map<Ativo, java.math.BigDecimal> valorGastoPorAtivo = new java.util.HashMap<>();
+    private final Map<Ativo, BigDecimal> custoTotalPosicaoEmReal = new HashMap<>();
 
 
     // Adiciona ativos (compra)
