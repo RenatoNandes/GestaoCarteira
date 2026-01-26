@@ -16,8 +16,6 @@ public class AtivoData {
 
     private static final DateTimeFormatter DT_FORMAT = DateTimeFormatter.ofPattern("dd/MM/yyyy");
 
-    /* ------------------ Helpers ------------------ */
-
     private static BigDecimal parseBigDecimalSafe(String s) {
         if (s == null) return null;
         String t = s.trim();
