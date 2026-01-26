@@ -20,6 +20,8 @@ public class Carteira {
 
     // Adiciona ativos (compra)
     public void adicionarAtivo(Ativo ativo, BigDecimal quantidade, BigDecimal precoExecucao) {
+        if (ativo == null) throw new IllegalArgumentException("Ativo não pode ser nulo.");
+
         if (quantidade == null || quantidade.compareTo(BigDecimal.ZERO) <= 0) {
             throw new QuantidadeInvalidaException("Não foi possível comprar: quantidade deve ser maior que zero.");
         }
