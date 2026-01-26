@@ -3,18 +3,18 @@ package utils;
 import java.io.BufferedReader;
 import java.io.FileReader;
 import java.io.IOException;
-import java.nio.file.NoSuchFileException;
 import java.util.ArrayList;
 import java.util.List;
 
 public class CsvReader {
 
     public static List<String[]> lerCsv(String caminhoArquivo) {
-        if (caminhoArquivo == null || caminhoArquivo.isBlank()) {
-            throw new IllegalArgumentException("Caminho do arquivo não pode ser vazio.");
-        }
-
         List<String[]> linhas = new ArrayList<>();
+
+        if (caminhoArquivo == null || caminhoArquivo.isBlank()) {
+            System.out.println("Caminho do arquivo CSV vazio.");
+            return linhas;
+        }
 
         try (BufferedReader br = new BufferedReader(new FileReader(caminhoArquivo))) {
             String linha;
@@ -25,17 +25,15 @@ public class CsvReader {
                     primeiraLinha = false;
                     continue;
                 }
-                // ignora linhas vazias
-                if (linha.trim().isEmpty()) continue;
+                if (linha.isBlank()) continue;
 
                 String[] campos = linha.split(";");
                 linhas.add(campos);
             }
-
-            return linhas;
-
         } catch (IOException e) {
-            throw new RuntimeException("Não foi possível ler o CSV: arquivo não encontrado (" + caminhoArquivo + ").");
+            System.out.println("Não foi possível ler o CSV: " + caminhoArquivo + " (" + e.getMessage() + ")");
         }
+
+        return linhas;
     }
 }
