@@ -150,12 +150,6 @@ public class Carteira {
         }
     }
 
-    public void adicionarGastoPorAtivo(Ativo ativo, java.math.BigDecimal gasto) {
-        if (ativo == null || gasto == null) return;
-        if (gasto.compareTo(java.math.BigDecimal.ZERO) <= 0) return;
-        valorGastoPorAtivo.merge(ativo, gasto, java.math.BigDecimal::add);
-    }
-
     public Ativo getAtivoPorIndice(int indice) {
         int i = 1;
         for (Ativo ativo : ativos.keySet()) {
