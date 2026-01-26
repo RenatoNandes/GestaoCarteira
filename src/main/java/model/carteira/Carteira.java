@@ -6,6 +6,7 @@ import model.ativo.Ativo;
 import model.ativo.TipoRenda;
 import model.investidor.Origem;
 
+import java.math.RoundingMode;
 import java.math.BigDecimal;
 import java.util.HashMap;
 import java.util.List;
@@ -36,21 +37,38 @@ public class Carteira {
     }
 
     // Remove ativos (venda)
-    public void removerAtivo(Ativo ativo, java.math.BigDecimal quantidade) {
-        java.math.BigDecimal atual = ativos.getOrDefault(ativo, java.math.BigDecimal.ZERO);
-        if (quantidade == null || quantidade.compareTo(java.math.BigDecimal.ZERO) <= 0) {
+
+    public void removerAtivo(Ativo ativo, BigDecimal quantidade) {
+        BigDecimal atual = ativos.getOrDefault(ativo, BigDecimal.ZERO);
+
+        if (quantidade == null || quantidade.compareTo(BigDecimal.ZERO) <= 0) {
             throw new QuantidadeInvalidaException("Quantidade inválida para venda.");
         }
         if (atual.compareTo(quantidade) < 0) {
             throw new QuantidadeInsuficienteException("Não foi possível vender: quantidade insuficiente.");
         }
-        java.math.BigDecimal novaQtd = atual.subtract(quantidade);
-        if (novaQtd.compareTo(java.math.BigDecimal.ZERO) == 0) {
+
+        // custo total da posição atual (em REAL)
+        BigDecimal custoTotal = valorGastoPorAtivo.getOrDefault(ativo, BigDecimal.ZERO);
+
+        // custo médio = custo total / quantidade atual
+        BigDecimal custoMedio = custoTotal.divide(atual, 10, RoundingMode.HALF_UP);
+
+        // remove custo proporcional ao vendido
+        BigDecimal custoRemovido = custoMedio.multiply(quantidade);
+        BigDecimal novoCustoTotal = custoTotal.subtract(custoRemovido);
+
+        BigDecimal novaQtd = atual.subtract(quantidade);
+
+        if (novaQtd.compareTo(BigDecimal.ZERO) == 0) {
             ativos.remove(ativo);
-            valorGastoPorAtivo.remove(ativo); // opcional: remove histórico se zerou posição
+            valorGastoPorAtivo.remove(ativo);
         } else {
             ativos.put(ativo, novaQtd);
-            // não alteramos valorGastoPorAtivo aqui (mantemos histórico de quanto foi gasto)
+            // evita negativo por arredondamento
+            if (novoCustoTotal.compareTo(BigDecimal.ZERO) < 0) novoCustoTotal = BigDecimal.ZERO;
+
+            valorGastoPorAtivo.put(ativo, novoCustoTotal);
         }
     }
 
