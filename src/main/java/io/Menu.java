@@ -66,60 +66,70 @@ public class Menu {
 
     private void cadastrarAtivo() {
         System.out.println("\n===== CADASTRAR ATIVO =====");
-        System.out.println("1 - Ação | 2 - FII | 3 - Tesouro | 4 - Cripto | 5 - Stock");
-        int tipo = inputUtils.lerOpcao(1, 5);
 
-        String nome = infoUtils.lerNome("Nome do ativo");
-        String ticker = infoUtils.lerTicker();
-        BigDecimal preco = infoUtils.lerPreco();
-        boolean restrito = inputUtils.lerBoolean("Restrito a qualificados? (s/n)");
+        try {
+            System.out.println("1 - Ação | 2 - FII | 3 - Tesouro | 4 - Cripto | 5 - Stock");
+            int tipo = inputUtils.lerOpcao(1, 5);
 
-        if (ticker == null || ticker.isBlank()) {
-            System.out.println("Erro: identificador não pode ser nulo ou em branco.");
-            return;
-        }
-        if (preco == null || preco.compareTo(BigDecimal.ZERO) <= 0) {
-            System.out.println("Erro: preço inválido (nulo, zero ou negativo).");
-            return;
-        }
+            String nome = infoUtils.lerNome("Nome do ativo");
+            String ticker = infoUtils.lerTicker();
+            BigDecimal preco = infoUtils.lerPreco();
+            boolean restrito = inputUtils.lerBoolean("Restrito a qualificados? (s/n)");
 
-        Ativo ativo;
-        switch (tipo) {
-            case 1 -> { // Acao(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados)
-                ativo = new Acao(nome, ticker, preco, restrito);
-            }
-            case 2 -> { // Fii(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, String segmento, BigDecimal ultimoDividendo, BigDecimal taxaAdministracao)
-                String segmento = infoUtils.lerTexto("Segmento");
-                BigDecimal ultimoDiv = infoUtils.lerBigDecimal("Último dividendo");
-                BigDecimal taxaAdm = infoUtils.lerBigDecimal("Taxa de administração");
-                ativo = new Fii(nome, ticker, preco, restrito, segmento, ultimoDiv, taxaAdm);
-            }
-            case 3 -> { // Tesouro(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, TipoRendimento tipoRendimento, LocalDate dataVencimento)
-                TipoRendimento tr = infoUtils.lerTipoRendimento("Tipo de rendimento (ex: PREFIXADO, IPCA, SELIC)");
-                LocalDate venc = infoUtils.lerData("Data de vencimento (yyyy-MM-dd)");
-                ativo = new Tesouro(nome, ticker, preco, restrito, tr, venc);
-            }
-            case 4 -> { // Criptomoeda(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, String algoritmoConsenso, BigDecimal quantidadeMaxima, BigDecimal fatorConversao)
-                String consenso = infoUtils.lerTexto("Algoritmo de consenso");
-                BigDecimal quantidadeMax = infoUtils.lerBigDecimalOpcional("Quantidade máxima (enter para nenhum)");
-                BigDecimal fatorConv = infoUtils.lerBigDecimal("Fator de conversão");
-                ativo = new Criptomoeda(nome, ticker, preco, restrito, consenso, quantidadeMax, fatorConv);
-            }
-            case 5 -> { // Stock(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, String bolsaNegociacao, String setor, BigDecimal fatorConversao)
-                String bolsa = infoUtils.lerTexto("Bolsa de negociação");
-                String setor = infoUtils.lerTexto("Setor");
-                BigDecimal fatorConv = infoUtils.lerBigDecimal("Fator de conversão");
-                ativo = new Stock(nome, ticker, preco, restrito, bolsa, setor, fatorConv);
-            }
-            default -> {
-                System.out.println("Tipo inválido.");
+            if (ticker == null || ticker.isBlank()) {
+                System.out.println("Erro: identificador não pode ser nulo ou em branco.");
                 return;
             }
-        }
+            if (preco == null || preco.compareTo(BigDecimal.ZERO) <= 0) {
+                System.out.println("Erro: preço inválido (nulo, zero ou negativo).");
+                return;
+            }
 
-        ativoManager.cadastrarAtivo(ativo);
-        System.out.println("Ativo cadastrado: " + ativo);
+            Ativo ativo;
+            switch (tipo) {
+                case 1 -> ativo = new Acao(nome, ticker, preco, restrito);
+                case 2 -> {
+                    String segmento = infoUtils.lerTexto("Segmento");
+                    BigDecimal ultimoDiv = infoUtils.lerBigDecimal("Último dividendo");
+                    BigDecimal taxaAdm = infoUtils.lerBigDecimal("Taxa de administração");
+                    ativo = new Fii(nome, ticker, preco, restrito, segmento, ultimoDiv, taxaAdm);
+                }
+                case 3 -> {
+                    TipoRendimento tr = infoUtils.lerTipoRendimento("Tipo de rendimento (ex: PREFIXADO, IPCA, SELIC)");
+                    LocalDate venc = infoUtils.lerData("Data de vencimento (yyyy-MM-dd)");
+                    ativo = new Tesouro(nome, ticker, preco, restrito, tr, venc);
+                }
+                case 4 -> {
+                    String consenso = infoUtils.lerTexto("Algoritmo de consenso");
+                    BigDecimal quantidadeMax = infoUtils.lerBigDecimalOpcional("Quantidade máxima (enter para nenhum)");
+                    BigDecimal fatorConv = infoUtils.lerBigDecimal("Fator de conversão");
+                    ativo = new Criptomoeda(nome, ticker, preco, restrito, consenso, quantidadeMax, fatorConv);
+                }
+                case 5 -> {
+                    String bolsa = infoUtils.lerTexto("Bolsa de negociação");
+                    String setor = infoUtils.lerTexto("Setor");
+                    BigDecimal fatorConv = infoUtils.lerBigDecimal("Fator de conversão");
+                    ativo = new Stock(nome, ticker, preco, restrito, bolsa, setor, fatorConv);
+                }
+                default -> {
+                    System.out.println("Tipo inválido.");
+                    return;
+                }
+            }
+
+            ativoManager.cadastrarAtivo(ativo);
+            System.out.println("Ativo cadastrado: " + ativo);
+
+        } catch (NumberFormatException e) {
+            System.out.println("Entrada numérica inválida. Use apenas números (ex: 10.50 ou 10,50).");
+        } catch (java.time.format.DateTimeParseException e) {
+            System.out.println("Data inválida. Use o formato yyyy-MM-dd (ex: 2026-01-26).");
+        } catch (RuntimeException e) {
+            // pega suas exceptions de regra de negócio também
+            System.out.println("Não foi possível cadastrar o ativo: " + e.getMessage());
+        }
     }
+
 
     private void cadastrarAtivoEmLote() {
         System.out.println("\n===== CADASTRAR ATIVOS EM LOTE =====");
