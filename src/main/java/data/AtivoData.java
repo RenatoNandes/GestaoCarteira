@@ -122,8 +122,8 @@ public class AtivoData {
                 BigDecimal preco = parseBigDecimalSafe(safeGet(c, 2));
                 String bolsa = safeGet(c, 3);
                 String setor = safeGet(c, 4);
-                BigDecimal fatorConv = parseBigDecimalSafe(safeGet(c, 5));
-                if (fatorConv == null) fatorConv = BigDecimal.valueOf(5.0);
+                BigDecimal fatorConv = (c.length >= 6) ? parseBigDecimalSafe(safeGet(c, 5)) : null;
+                if (fatorConv == null) fatorConv = BigDecimal.valueOf(5);
 
                 if (preco == null) {
                     System.out.println("Linha ignorada (preço inválido) em Stocks: " + String.join(",", c));
