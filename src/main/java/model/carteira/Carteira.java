@@ -18,16 +18,21 @@ public class Carteira {
 
 
     // Adiciona ativos (compra)
-    public void adicionarAtivo(Ativo ativo, java.math.BigDecimal quantidade) {
-        if (quantidade == null || quantidade.compareTo(java.math.BigDecimal.ZERO) <= 0) {
-            throw new exception.QuantidadeInvalidaException("Não foi possível comprar: quantidade deve ser maior que zero.");
+    public void adicionarAtivo(Ativo ativo, BigDecimal quantidade, BigDecimal precoExecucao) {
+        if (quantidade == null || quantidade.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new QuantidadeInvalidaException("Não foi possível comprar: quantidade deve ser maior que zero.");
         }
-        // atualiza quantidade
-        ativos.merge(ativo, quantidade, java.math.BigDecimal::add);
+        if (precoExecucao == null || precoExecucao.compareTo(BigDecimal.ZERO) <= 0) {
+            throw new IllegalArgumentException("Preço de execução deve ser maior que zero.");
+        }
+        ativos.merge(ativo, quantidade, BigDecimal::add);
+        // custo da compra em REAL: converte o preço de execução e multiplica pela quantidade
+        BigDecimal custoCompraEmReal = ativo.converterValorParaReal(precoExecucao).multiply(quantidade);
+        valorGastoPorAtivo.merge(ativo, custoCompraEmReal, BigDecimal::add);
+    }
 
-        // registra valor gasto: quantidade * precoAtual
-        java.math.BigDecimal gasto = ativo.getPrecoAtual().multiply(quantidade);
-        valorGastoPorAtivo.merge(ativo, gasto, java.math.BigDecimal::add);
+    public void adicionarAtivo(Ativo ativo, BigDecimal quantidade) {
+        adicionarAtivo(ativo, quantidade, ativo.getPrecoAtual());
     }
 
     // Remove ativos (venda)
