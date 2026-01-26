@@ -1,7 +1,10 @@
-package model;
+package model.carteira;
 
 import exception.InvestidorNaoQualificadoException;
 import exception.MovimentacaoInvalidaException;
+import model.ativo.Ativo;
+import model.investidor.Institucional;
+import model.investidor.Investidor;
 
 import java.math.BigDecimal;
 import java.time.LocalDateTime;
@@ -38,7 +41,7 @@ public class Movimentacao {
         Carteira carteira = investidor.getCarteira();
 
         // Para que somente investidores qualificados comprem ativos restritos
-        if (tipo == TipoMovimentacao.COMPRA && ativo.isQualificados()) {
+        if (tipo == TipoMovimentacao.COMPRA && ativo.isQualificado()) {
             if (!(investidor instanceof Institucional)) {
                 throw new InvestidorNaoQualificadoException(
                         "Investidor não qualificado não pode comprar ativo restrito: " + ativo.getNome()

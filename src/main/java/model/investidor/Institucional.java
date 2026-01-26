@@ -1,4 +1,4 @@
-package model;
+package model.investidor;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;

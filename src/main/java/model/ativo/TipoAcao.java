@@ -1,4 +1,4 @@
-package model;
+package model.ativo;
 
 public enum TipoAcao {
     ORDINARIA,

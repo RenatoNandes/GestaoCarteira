@@ -1,6 +1,7 @@
-package model;
+package model.ativo;
 
 import exception.AtivoInvalidoException;
+import model.investidor.Origem;
 
 import java.math.BigDecimal;
 

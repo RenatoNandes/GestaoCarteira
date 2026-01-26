@@ -1,4 +1,4 @@
-package model;
+package model.investidor;
 
 public enum PerfilInvestimento {
     CONSERVADOR,

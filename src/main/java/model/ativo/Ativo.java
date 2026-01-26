@@ -1,6 +1,7 @@
-package model;
+package model.ativo;
 
 import exception.AtivoInvalidoException;
+import model.investidor.Origem;
 
 import java.math.BigDecimal;
 
@@ -8,11 +9,11 @@ public abstract class Ativo {
     private final String nome;
     private final String ticker;
     private BigDecimal precoAtual; // não vamos usar double para evitar imprecisão
-    private final boolean restritoQualificados;
+    private final boolean restritoQualificado;
     private final TipoRenda tipoRenda; // fixa/variável
     private final Origem origem; // nacional/internacional;
 
-    public Ativo(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificados, TipoRenda tipoRenda, Origem origem) {
+    public Ativo(String nome, String ticker, BigDecimal precoAtual, boolean restritoQualificado, TipoRenda tipoRenda, Origem origem) {
         if (nome == null || nome.isBlank()) {
             throw new AtivoInvalidoException("Nome do ativo não pode ser nulo ou vazio.");
         }
@@ -36,7 +37,7 @@ public abstract class Ativo {
         this.nome = nome;
         this.ticker = ticker;
         this.precoAtual = precoAtual;
-        this.restritoQualificados = restritoQualificados;
+        this.restritoQualificado = restritoQualificado;
         this.tipoRenda = tipoRenda;
         this.origem = origem;
     }
@@ -53,8 +54,8 @@ public abstract class Ativo {
         return precoAtual;
     }
 
-    public boolean isQualificados() {
-        return restritoQualificados;
+    public boolean isQualificado() {
+        return restritoQualificado;
     }
 
     public TipoRenda getTipoRenda() {

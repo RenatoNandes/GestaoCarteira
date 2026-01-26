@@ -1,4 +1,7 @@
-package model;
+package model.investidor;
+
+import model.carteira.Carteira;
+import model.ativo.Ativo;
 
 import java.math.BigDecimal;
 import java.time.LocalDate;
@@ -7,7 +10,7 @@ public abstract class Investidor {
 
     private final String nome;
     private final String identificador; // CPF ou CNPJ
-    private String telefone;
+    private final String telefone;
     private final LocalDate dataNascimento;
     private final Endereco endereco;
     private BigDecimal patrimonio;
@@ -67,6 +70,14 @@ public abstract class Investidor {
             throw new IllegalArgumentException("Patrimônio não pode ser negativo.");
         }
         this.patrimonio = novoValor;
+    }
+
+    public void comprar(Ativo ativo, int quantidade) {
+        carteira.adicionarAtivo(ativo, BigDecimal.valueOf(quantidade));
+    }
+
+    public void vender(Ativo ativo, int quantidade) {
+        carteira.removerAtivo(ativo, BigDecimal.valueOf(quantidade));
     }
 
     @Override
