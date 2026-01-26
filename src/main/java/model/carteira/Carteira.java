@@ -217,11 +217,9 @@ public class Carteira {
                 if ("C".equals(tipo)) {
                     BigDecimal precoUsado = (preco != null ? preco : alvo.getPrecoAtual());
                     adicionarAtivo(alvo, quantidade, precoUsado);
-                    if (preco != null) {
-                        java.math.BigDecimal gasto = precoUsado.multiply(quantidade);
-                        valorGastoPorAtivo.merge(alvo, gasto, java.math.BigDecimal::add);
-                    }
-                } else if ("V".equals(tipo)) {
+                }
+
+             else if ("V".equals(tipo)) {
                     removerAtivo(alvo, quantidade);
                 } else {
                     System.out.println("Tipo de movimentação inválido: " + tipo + " (linha ignorada)");
