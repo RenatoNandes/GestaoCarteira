@@ -134,14 +134,23 @@ public class Menu {
     private void cadastrarAtivoEmLote() {
         System.out.println("\n===== CADASTRAR ATIVOS EM LOTE =====");
         String caminho = infoUtils.lerTexto("Informe o caminho do arquivo CSV");
+
         try {
             List<Ativo> novos = AtivoData.carregarPorArquivoGenerico(caminho);
+
+            if (novos == null || novos.isEmpty()) {
+                System.out.println("Nenhum ativo foi carregado (arquivo vazio ou linhas inválidas).");
+                return;
+            }
+
             ativoManager.cadastrarEmLote(novos);
-            System.out.println("Ativos carregados com sucesso.");
-        } catch (Exception e) {
+            System.out.println("Ativos carregados com sucesso. Total: " + novos.size());
+
+        } catch (RuntimeException e) {
             System.out.println("Erro ao carregar ativos em lote: " + e.getMessage());
         }
     }
+
 
     private void editarAtivo() {
         List<Ativo> lista = ativoManager.getAtivos();
