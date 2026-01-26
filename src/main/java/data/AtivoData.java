@@ -153,8 +153,9 @@ public class AtivoData {
                 if (c.length > 4 && !safeGet(c, 4).isBlank()) {
                     quantidadeMaxima = parseBigDecimalSafe(safeGet(c, 4));
                 }
-                BigDecimal fatorConv = parseBigDecimalSafe(safeGet(c, 5));
-                if (fatorConv == null) fatorConv = BigDecimal.valueOf(5.0);
+                BigDecimal fatorConv = (c.length >= 6) ? parseBigDecimalSafe(safeGet(c, 5)) : null;
+                if (fatorConv == null) fatorConv = BigDecimal.valueOf(5);
+
 
                 if (preco == null) {
                     System.out.println("Linha ignorada (preço inválido) em Criptos: " + String.join(",", c));
