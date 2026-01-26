@@ -29,28 +29,25 @@ public class PessoaFisica extends Investidor {
     }
 
     @Override
-    public void comprar(Ativo ativo, int qtd) {
-        if (qtd <= 0) {
+    public void comprar(Ativo ativo, BigDecimal quantidade, BigDecimal precoExecucao) {
+        if (ativo == null) throw new IllegalArgumentException("Ativo não pode ser nulo.");
+        if (quantidade == null || quantidade.compareTo(BigDecimal.ZERO) <= 0)
             throw new QuantidadeInvalidaException("Não foi possível comprar: quantidade deve ser maior que zero.");
-        }
+        if (precoExecucao == null || precoExecucao.compareTo(BigDecimal.ZERO) <= 0)
+            throw new IllegalArgumentException("Preço de execução deve ser maior que zero.");
 
-        // Regras específicas para Pessoa Física
-        if (ativo instanceof Criptomoeda && perfil != PerfilInvestimento.ARROJADO) {
+        if (ativo instanceof Criptomoeda && perfil != PerfilInvestimento.ARROJADO)
             throw new IllegalArgumentException("Apenas investidores Arrojados podem comprar criptoativos.");
-        }
 
-        if (ativo instanceof Stock && perfil == PerfilInvestimento.CONSERVADOR) {
+        if (ativo instanceof Stock && perfil == PerfilInvestimento.CONSERVADOR)
             throw new IllegalArgumentException("Investidores Conservadores não podem comprar stocks.");
-        }
 
-        // Ativos qualificados só podem ser comprados por PF com patrimônio >= 1.000.000
-        if (ativo.isQualificado() && getPatrimonio().compareTo(new BigDecimal("1000000")) < 0) {
+        if (ativo.isQualificado() && getPatrimonio().compareTo(new BigDecimal("1000000")) < 0)
             throw new IllegalArgumentException("Somente investidores qualificados (patrimônio ≥ R$1.000.000,00) podem comprar este ativo.");
-        }
 
-        // Se passou pelas regras, adiciona na carteira
-        getCarteira().adicionarAtivo(ativo, BigDecimal.valueOf(qtd));
+        getCarteira().adicionarAtivo(ativo, quantidade, precoExecucao);
     }
+
 
     @Override
     public void vender(Ativo ativo, int qtd) {
