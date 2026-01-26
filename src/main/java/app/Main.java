@@ -1,12 +1,37 @@
 package app;
 
+import data.AtivoData;
 import model.*;          // importa todas as classes do package model
 import exception.*;      // importa todas as exceções personalizadas
+import utils.CsvReader;
+
 import java.math.BigDecimal;
 import java.time.LocalDate;
+import java.util.List;
 
 public class Main {
     public static void main(String[] args) {
+        List<Acao> acoes = AtivoData.carregarAcoes("acao.csv");
+        List<Tesouro> tesouros = AtivoData.carregarTesouros("tesouro.csv");
+        List<Stock> stocks = AtivoData.carregarStocks("stock.csv");
+        List<Criptomoeda> criptos = AtivoData.carregarCriptos("criptoativo.csv");
+        List<Fii> fiis = AtivoData.carregarFiis("fii.csv");
+
+        System.out.println("Ações:");
+        acoes.stream().limit(3).forEach(System.out::println);
+
+        System.out.println("\nTesouros:");
+        tesouros.stream().limit(3).forEach(System.out::println);
+
+        System.out.println("\nStocks:");
+        stocks.stream().limit(3).forEach(System.out::println);
+
+        System.out.println("\nCriptomoedas:");
+        criptos.stream().limit(3).forEach(System.out::println);
+
+        System.out.println("\nFIIs:");
+        fiis.stream().limit(3).forEach(System.out::println);
+
         try {
             // 1. Criar endereço
             Endereco endereco = new Endereco("Rua A", "123", "Centro", "36000-000", "Juiz de Fora", "MG");
