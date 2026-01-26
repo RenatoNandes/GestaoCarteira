@@ -132,7 +132,7 @@ public class Menu {
             List<Ativo> novos = AtivoData.carregarPorArquivoGenerico(caminho);
 
             if (novos == null || novos.isEmpty()) {
-                System.out.println("Nenhum ativo foi carregado (arquivo vazio ou linhas inválidas).");
+                System.out.println("Nenhum ativo carregado (arquivo vazio, caminho inválido ou dados inválidos).");
                 return;
             }
 
@@ -140,9 +140,12 @@ public class Menu {
             System.out.println("Ativos carregados com sucesso. Total: " + novos.size());
 
         } catch (RuntimeException e) {
-            System.out.println("Erro ao carregar ativos em lote: " + e.getMessage());
+            System.out.println("Falha ao carregar CSV: " + e.getMessage());
+        } catch (Exception e) {
+            System.out.println("Erro inesperado ao carregar ativos: " + e.getMessage());
         }
     }
+
 
 
     private void editarAtivo() {
