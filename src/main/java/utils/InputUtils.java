@@ -44,19 +44,26 @@ public class InputUtils {
         String s = scanner.nextLine().trim().toLowerCase();
         return s.startsWith("s");
     }
-    public BigDecimal lerBigDecimalPositivo(String prompt) {
-        System.out.print(prompt);
+    public BigDecimal lerBigDecimalPositivo(String msg) {
         while (true) {
-            String s = scanner.nextLine().trim().replace(",", ".");
+            System.out.print(msg);
+            String s = scanner.nextLine();
+
+            if (s == null) {
+                System.out.println("Valor inválido.");
+                continue;
+            }
+
+            s = s.trim().replace(",", ".");
             try {
                 BigDecimal v = new BigDecimal(s);
                 if (v.compareTo(BigDecimal.ZERO) <= 0) {
-                    System.out.print("Valor deve ser maior que zero. Digite novamente: ");
+                    System.out.println("Digite um valor maior que zero.");
                     continue;
                 }
                 return v;
             } catch (NumberFormatException e) {
-                System.out.print("Entrada inválida. Exemplo válido: 10,5. Digite novamente: ");
+                System.out.println("Formato inválido. Exemplos válidos: 10 | 10.5 | 0.25");
             }
         }
     }
