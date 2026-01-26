@@ -167,21 +167,5 @@ public class InfoUtils {
         String s = scanner.nextLine().trim().toUpperCase();
         return TipoRendimento.valueOf(s); // trate IllegalArgumentException se quiser validação
     }
-    public BigDecimal lerBigDecimalPositivo(String prompt) {
-        System.out.print(prompt);
-        while (true) {
-            String s = scanner.nextLine().trim().replace(",", ".");
-            try {
-                BigDecimal v = new BigDecimal(s);
-                if (v.compareTo(BigDecimal.ZERO) <= 0) {
-                    System.out.print("Valor deve ser maior que zero. Digite novamente: ");
-                    continue;
-                }
-                return v;
-            } catch (NumberFormatException e) {
-                System.out.print("Entrada inválida. Exemplo válido: 10,5. Digite novamente: ");
-            }
-        }
-    }
 
 }
