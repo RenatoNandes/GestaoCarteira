@@ -92,6 +92,7 @@ public class InvestidorManager {
         if (antigo == null) throw new IllegalArgumentException("Investidor não encontrado: " + identificador);
 
         Investidor novo;
+
         try {
             if (antigo instanceof PessoaFisica pf) {
                 novo = new PessoaFisica(
@@ -119,35 +120,28 @@ public class InvestidorManager {
         } catch (Exception e) {
             throw new RuntimeException("Erro ao criar novo investidor: " + e.getMessage(), e);
         }
+        var carteiraAntiga = antigo.getCarteira();
+        var carteiraNova = novo.getCarteira();
 
-        // Copia carteira
-        var mapaAntigo = antigo.getCarteira().getAtivos(); // Map<Ativo, BigDecimal>
-        for (var entry : mapaAntigo.entrySet()) {
-            var ativo = entry.getKey();
-            var quantidade = entry.getValue();
-            // adiciona a mesma quantidade ao novo investidor
-            novo.getCarteira().adicionarAtivo(ativo, quantidade);
+        for (var entry : carteiraAntiga.getAtivos().entrySet()) {
+            Ativo ativo = entry.getKey();
+            java.math.BigDecimal quantidade = entry.getValue();
 
-            try {
-                java.math.BigDecimal gasto = antigo.getCarteira().getValorGastoPorAtivo(ativo);
-                if (gasto != null && gasto.compareTo(java.math.BigDecimal.ZERO) > 0) {
-                    try {
-                        novo.getCarteira().adicionarGastoPorAtivo(ativo, gasto);
-                    } catch (NoSuchMethodError | UnsupportedOperationException ignored) {
-                    }
-                }
-            } catch (NoSuchMethodError ignored) {
+            carteiraNova.getAtivos().put(ativo, quantidade);
+
+            java.math.BigDecimal custo = carteiraAntiga.getValorGastoPorAtivo(ativo);
+            if (custo != null && custo.compareTo(java.math.BigDecimal.ZERO) >= 0) {
+                carteiraNova.definirCustoPosicao(ativo, custo);
             }
         }
 
-        // remove antigo e adiciona novo na mesma posição
         int idx = investidores.indexOf(antigo);
         if (idx >= 0) {
             investidores.set(idx, novo);
         } else {
-            // remove e adiciona
             investidores.remove(antigo);
             investidores.add(novo);
         }
     }
+
 }
