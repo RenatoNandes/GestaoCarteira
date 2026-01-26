@@ -41,6 +41,8 @@ public class Carteira {
     // Remove ativos (venda)
 
     public void removerAtivo(Ativo ativo, BigDecimal quantidade) {
+        if (ativo == null) throw new IllegalArgumentException("Ativo não pode ser nulo.");
+
         BigDecimal atual = ativos.getOrDefault(ativo, BigDecimal.ZERO);
 
         if (quantidade == null || quantidade.compareTo(BigDecimal.ZERO) <= 0) {
