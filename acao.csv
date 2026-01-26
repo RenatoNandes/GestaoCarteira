@@ -1,0 +1,393 @@
+Ticker;Nome;Preço (R$);Qualificado?
+B3SA3;B3;14,38;0
+ABEV3;Ambev;13,64;0
+BBDC4;Banco Bradesco;18,52;0
+ASAI3;Assaí;7,35;0
+BBAS3;Banco do Brasil;21,82;0
+AZEV4;Azevedo & Travassos;0,23;0
+BRAV3;3R Petroleum;17,05;0
+AMBP3;Ambipar;0,31;0
+AXIA3;Axia Energia;51,20;0
+ANIM3;Ânima Educação;4,15;0
+BEEF3;Minerva;5,17;0
+ALOS3;Allos;28,91;0
+BBSE3;BB Seguridade;34,65;0
+AZZA3;Arezzo;24,71;0
+BBDC3;Banco Bradesco;15,84;0
+BRAP4;Bradespar;21,16;0
+BHIA3;Casas Bahia;2,98;0
+ALPA4;Alpargatas;12,75;0
+AURE3;Auren Energia;11,52;0
+AMER3;Americanas;5,00;0
+AZEV3;Azevedo & Travassos;0,32;0
+AZTE3;AZT Energia;0,42;0
+BMGB4;Banco BMG;4,92;0
+ARML3;Armac;4,19;0
+ABCB4;Banco ABC Brasil;24,10;0
+BLAU3;Blau Farmacêutica;10,26;0
+BPAN4;Banco Pan;11,64;0
+ALLD3;Allied;8,44;0
+BMOB3;Bemobi;22,22;0
+AGRO3;BrasilAgro;20,03;0
+ALPK3;Estapar;4,59;0
+AMAR3;Lojas Marisa;1,02;0
+BRAP3;Bradespar;18,42;0
+BMEB4;Banco Mercantil do Brasil;57,53;0
+AMOB3;Automob;13,67;0
+AERI3;Aeris Energy;3,24;0
+AALR3;Alliança;4,60;0
+BIOM3;Biomm;7,12;0
+ALUP4;Alupar;10,00;0
+ALPA3;Alpargatas;10,59;0
+AVLL3;Alphaville;0,94;0
+AGXY3;AgroGalaxy;4,29;1
+BPAC3;Banco BTG Pactual;38,63;0
+ALUP3;Alupar;11,71;0
+BEES4;Banestes;8,24;0
+BEES3;Banestes;8,22;0
+BMEB3;Banco Mercantil do Brasil;50,49;0
+ATED3;ATOM EDUCAÇÃO E EDITORA S.A.;2,07;0
+BALM4;Baumer;18,87;0
+BAZA3;Banco da Amazônia;77,75;0
+BNBR3;Banco do Nordeste;116,25;0
+BOBR4;Bombril;1,27;0
+BIED3;Bioma;4,26;0
+BMKS3;Monark;377,00;0
+BGIP3;Banese;41,32;0
+BGIP4;Banese;34,60;0
+AFLT3;Afluente T;7,08;0
+MBRF3;Marfrig;18,62;0
+COGN3;Cogna;3,58;0
+VALE3;Vale;76,32;0
+CEAB3;C&A;10,46;0
+PETR4;Petrobras;29,83;0
+RAIZ4;Raízen;0,83;0
+CSAN3;Cosan;5,10;0
+MGLU3;Magazine Luiza;9,29;0
+ITUB4;Itaú Unibanco;39,32;0
+ITSA4;Itaúsa;11,77;0
+CPLE3;Copel;12,12;0
+DIRR3;Direcional;13,65;0
+CSNA3;Siderúrgica Nacional;9,85;0
+LREN3;Lojas Renner;13,13;0
+CMIG4;Cemig;11,00;0
+USIM5;Usiminas;6,48;0
+VAMO3;Grupo Vamos;3,26;1
+PETR3;Petrobras;31,18;0
+PRIO3;PetroRio;41,07;0
+ONCO3;Oncoclínicas;2,92;0
+TIMS3;TIM;21,70;0
+GMAT3;Grupo Mateus;4,47;0
+CVCB3;CVC;2,29;0
+GGBR4;Gerdau;21,27;0
+ENEV3;Eneva;20,02;0
+RENT3;Localiza;43,96;0
+SUZB3;Suzano;49,94;0
+MOTV3;Motiva;15,35;0
+RADL3;RaiaDrogasil;24,18;0
+CYRE3;Cyrela;24,22;0
+CMIN3;CSN Mineração;5,58;0
+GOAU4;Metalúrgica Gerdau;9,27;0
+CBAV3;CBA;7,97;0
+VIVA3;Vivara;29,93;0
+VBBR3;Vibra Energia;25,48;0
+MRVE3;MRV;8,01;0
+RCSL4;Recrusul;8,80;0
+RAIL3;Rumo;14,66;0
+RECV3;PetroRecôncavo;11,00;0
+YDUQ3;YDUQS;12,60;0
+NATU3;NATURA;7,28;0
+MOVI3;Movida;9,80;0
+POMO4;Marcopolo;5,93;0
+UGPA3;Ultrapar;20,83;0
+SMFT3;Smart Fit;23,13;0
+SANB11;Banco Santander;33,15;0
+WEGE3;WEG;47,70;0
+PGMN3;Pague Menos;6,44;0
+RDOR3;Rede D'Or;40,99;0
+OIBR3;Oi;0,16;0
+BPAC11;Banco BTG Pactual;53,25;0
+EQTL3;Equatorial Energia;38,25;0
+ECOR3;EcoRodovias;10,90;0
+SIMH3;Simpar;5,32;0
+HAPV3;Hapvida;16,14;0
+RAPT4;Randon;6,14;0
+ENGI11;Energisa;46,72;0
+KLBN11;Klabin;18,35;0
+PSSA3;Porto Seguro;49,65;0
+GRND3;Grendene;4,64;0
+EMBJ3;Embraer;93,91;0
+VIVT3;Vivo;32,76;0
+SMTO3;São Martinho;14,21;0
+MULT3;Multiplan;27,30;0
+PCAR3;Grupo Pão de Açúcar;4,01;0
+KLBN4;Klabin;3,68;0
+CYRE4;Cyrela;22,85;0
+SBSP3;Sabesp;129,71;0
+BRKM5;Braskem;7,76;0
+ISAE4;ISA Energia;26,81;0
+FLRY3;Fleury;15,35;0
+VVEO3;Viveo;1,34;0
+QUAL3;Qualicorp;2,30;0
+TOTS3;Totvs;42,57;0
+DXCO3;Dexco;5,27;0
+ODPV3;Odontoprev;11,40;0
+TEND3;Construtora Tenda;24,57;0
+JHSF3;JHSF;7,90;0
+SLCE3;SLC Agrícola;14,36;0
+CXSE3;Caixa Seguridade;16,15;0
+HBSA3;Hidrovias do Brasil;3,83;0
+GUAR3;Guararapes;8,55;0
+HYPE3;Hypera;23,66;0
+MDNE3;Moura Dubeux;27,02;0
+CURY3;Cury;31,94;0
+BRSR6;Banrisul;16,22;0
+CASH3;Méliuz;4,07;0
+AXIA6;Axia Energia;51,87;0
+MYPK3;Iochpe-Maxion;9,76;0
+SEER3;Ser Educacional;9,95;0
+TAEE11;Taesa;41,35;0
+SBFG3;Grupo SBF;12,96;0
+PMAM3;Paranapanema;0,69;0
+KEPL3;Kepler Weber;10,05;0
+ESPA3;Espaçolaser;1,00;0
+EZTC3;EZTEC;13,99;0
+GGPS3;GPS;16,53;0
+LWSA3;Locaweb;4,25;0
+TASA4;Taurus;5,42;0
+DASA3;Dasa;4,05;0
+IGTI11;Iguatemi;25,38;0
+IGTI11;Jereissati Participações;25,38;0
+POSI3;Positivo;4,09;0
+EGIE3;Engie;30,90;0
+CSMG3;COPASA;42,70;0
+POMO3;Marcopolo;5,58;0
+ITUB3;Itaú Unibanco;36,70;0
+PLPL3;Plano&Plano;14,25;0
+CPFE3;CPFL Energia;52,38;0
+IRBR3;IRB Brasil RE;51,26;0
+SOJA3;Boa Safra Sementes;8,57;0
+DESK3;Desktop;16,97;0
+LJQQ3;Lojas Quero-Quero;2,19;0
+NEOE3;Neoenergia;31,95;0
+SAPR11;Sanepar;41,03;0
+HBOR3;Helbor;2,42;0
+TTEN3;3tentos;16,16;1
+JALL3;Jalles Machado;2,71;0
+VULC3;Vulcabras;19,69;0
+TUPY3;Tupy;11,70;0
+SYNE3;SYN;4,68;0
+LAVV3;Lavvi Incorporadora;16,45;0
+LIGT3;Light;4,70;0
+CSED3;Cruzeiro do Sul Educacional;6,29;0
+ORVR3;Orizon;70,50;0
+JSLG3;JSL;6,09;0
+INTB3;Intelbras;11,72;0
+KLBN3;Klabin;3,69;0
+MILS3;Mills;14,35;0
+SAPR4;Sanepar;7,94;0
+FESA4;Ferbasa;6,79;0
+FIQE3;Unifique;4,93;0
+PNVL3;Dimed;12,13;0
+MELK3;Melnick;3,70;0
+CAML3;Camil Alimentos;5,49;0
+MLAS3;Multilaser;1,38;0
+EVEN3;Even;7,49;0
+USIM3;Usiminas;6,47;0
+OPCT3;OceanPact;8,62;0
+PINE4;Banco Pine;12,85;0
+RCSL3;Recrusul;2,59;0
+TFCO4;Track & Field;16,13;0
+HBRE3;HBR Realty;3,66;0
+WIZC3;Wiz Soluções;9,24;0
+VTRU3;VITRUBREPCOM;15,35;0
+ALUP11;Alupar;31,58;0
+ENJU3;Enjoei;1,02;0
+GFSA3;Gafisa;4,90;0
+LOGG3;LOG CP;26,04;0
+SHUL4;Schulz;5,14;0
+RANI3;Irani;8,73;0
+FRAS3;Fras-le;23,74;0
+LEVE3;Mahle Metal Leve;33,58;0
+BRST3;Brisanet;3,42;0
+PRNR3;Priner;15,80;0
+LPSB3;Lopes;1,69;0
+IFCM3;Infracommerce;1,08;1
+UNIP6;Unipar;60,04;0
+BRBI11;BR Partners;19,74;0
+MDIA3;M. Dias Branco;24,16;0
+PDGR3;PDG Realty;1,37;0
+MTRE3;Mitre Realty;3,70;0
+ITSA3;Itaúsa;12,12;0
+PFRM3;Profarma;8,24;0
+VLID3;Valid;20,66;0
+ROMI3;Indústrias ROMI;8,18;0
+RNEW4;Renova Energia;0,92;0
+SEQL3;Sequoia Logística;2,15;0
+TRIS3;Trisul;6,10;0
+TOKY3;Toky;0,76;0
+SAPR3;Sanepar;9,01;0
+TAEE4;Taesa;13,97;0
+OBTC3;CURSINHO INTERGRAUS S.A;9,23;0
+TGMA3;Tegma;36,10;0
+TCSA3;Tecnisa;1,28;0
+DEXP3;Dexxos;7,94;0
+VIVR3;Viver;0,61;0
+CSUD3;CSU Cardsystem;17,77;0
+LUPA3;Lupatech;0,87;0
+PTBL3;Portobello;3,25;0
+EALT4;Electro Aço Altona;14,00;0
+FHER3;Fertilizantes Heringer;3,81;0
+MEAL3;IMC Alimentação;1,27;0
+SANB4;Banco Santander;16,85;0
+CMIG3;Cemig;14,30;0
+MATD3;Mater Dei;5,38;0
+ETER3;Eternit;4,06;0
+SCAR3;São Carlos;13,70;0
+VITT3;Vittia;4,70;0
+INEP3;Inepar;1,45;0
+SANB3;Banco Santander;16,19;0
+DMVF3;D1000 Varejo Farma;6,60;0
+RNEW3;Renova Energia;1,10;0
+LOGN3;Log-In;33,25;0
+TAEE3;Taesa;13,68;0
+TASA3;Taurus;5,46;0
+GGBR3;Gerdau;18,00;0
+CAMB3;Cambuci;9,73;0
+EUCA4;Eucatex;18,28;0
+GOAU3;Metalúrgica Gerdau;8,84;0
+TPIS3;Triunfo;5,05;0
+UCAS3;Unicasa;1,38;0
+TECN3;Technos;7,04;0
+HOOT4;Hotéis Othon;6,08;0
+ENGI4;Energisa;8,61;0
+OIBR4;Oi;1,80;0
+RAPT3;Randon;6,20;0
+SHOW3;Time For Fun;6,67;0
+INEP4;Inepar;1,17;0
+NGRD3;Neogrid;28,15;0
+CGRA4;Grazziotin;26,98;0
+WEST3;Westwing;5,78;0
+VSTE3;LE LIS BLANC;3,89;0
+JFEN3;João Fortes;1,02;0
+BPAC5;Banco BTG Pactual;10,76;0
+LAND3;Terra Santa;8,59;0
+IGTI3;Iguatemi;2,92;0
+IGTI3;Jereissati Participações;2,92;0
+DOTZ3;Dotz;4,35;0
+COCE5;Coelce;34,79;0
+HAGA4;Haga;1,13;0
+UNIP3;Unipar;59,39;0
+PINE3;Banco Pine;13,00;0
+MNPR3;Minupar;4,59;0
+ENGI3;Energisa;12,30;0
+BRKM3;Braskem;8,00;0
+BRSR3;Banrisul;17,70;0
+PDTC3;Padtec;1,37;0
+TRAD3;Traders Club;3,90;0
+WDCN3;WDC Networks;2,72;0
+EPAR3;Embpar Participações;4,01;0
+DOHL4;Döhler;3,64;0
+CEBR6;CEB;28,30;0
+WHRL3;Whirlpool;4,27;0
+EMAE4;EMAE;43,49;0
+CLSC4;Celesc;126,33;0
+RSID3;Rossi Residencial;1,60;0
+RSUL4;Metalúrgica Riosulense;64,99;0
+CGRA3;Grazziotin;27,00;0
+AZEV11;Azevedo & Travassos;0,07;0
+BSLI3;Banco de Brasília;6,66;0
+FICT3;Fictor Alimentos;1,98;0
+CRPG5;Tronox Pigmentos;18,98;0
+MOAR3;Monteiro Aranha;62,97;0
+EQPA3;Equatorial Energia Pará;6,12;0
+WLMM4;WLM;21,20;0
+WHRL4;Whirlpool;4,63;0
+MNDL3;Mundial;15,50;0
+PTNT3;Pettenati;8,60;0
+LUXM4;Trevisa;4,50;0
+EUCA3;Eucatex;20,42;0
+FESA3;Ferbasa;12,33;0
+ISAE3;ISA Energia;33,51;0
+MTSA4;Metisa;47,50;0
+EALT3;Electro Aço Altona;14,15;0
+PPLA11;PPLA;0,75;0
+NUTR3;Nutriplant;2,65;0
+PINE11;Banco Pine;21,50;0
+NORD3;Nordon;4,05;0
+RPMG3;Refinaria de Manguinhos;2,08;0
+TELB4;Telebras;7,87;0
+OFSA3;Ourofino Saúde Animal;23,30;0
+MGEL4;Mangels;5,66;0
+TKNO4;Tekno;209,50;0
+CEBR3;CEB;27,59;0
+BSLI4;Banco de Brasília;7,12;0
+PTNT4;Pettenati;4,63;0
+OSXB3;OSX Brasil;1,85;0
+CEEB3;COELBA;44,75;0
+REDE3;Rede Energia;6,23;0
+CGAS5;Comgás;130,03;0
+DEXP4;Dexxos;7,80;0
+BDLL4;Bardella;6,20;0
+ARND3;Arandu;1,15;0
+CTKA4;Karsten;39,40;0
+PEAB4;Participações Aliança da Bahia;38,20;0
+GEPA4;Rio Paranapanema Energia;33,00;0
+IGTI4;Jereissati Participações;11,40;0
+IGTI4;Iguatemi;11,40;0
+CEDO4;Cedro Têxtil;10,03;0
+ENMT3;Energisa MT;49,21;0
+CEBR5;CEB;26,18;0
+CBEE3;Ampla Energia;10,98;0
+CRPG6;Tronox Pigmentos;18,74;0
+EKTR4;Elektro;39,25;0
+COCE3;Coelce;34,98;0
+HBTS5;Habitasul;31,60;0
+EQMA3B;Equatorial Maranhão;30,99;0
+PATI3;Panatlântica;29,10;0
+WLMM3;WLM;19,62;0
+TELB3;Telebras;11,64;0
+RPAD5;Alfa Holdings;6,40;0
+GSHP3;General Shopping & Outlets;4,20;0
+SNSY5;Sansuy;2,84;0
+RVEE3;REVEE S.A.;2,30;0
+RVEE3;REVEE;2,30;0
+CTAX3;Contax;0,94;0
+HAGA3;Haga;1,64;0
+CTSA4;Santanense;2,02;0
+EQPA5;Equatorial Energia Pará;17,00;0
+FIEI3;Fica;14,39;0
+BMIN4;Banco Mercantil de Investimentos;18,41;0
+PLAS3;Plascar;5,00;0
+BAUH4;Excelsior;93,30;0
+UNIP5;Unipar;61,23;0
+GEPA3;Rio Paranapanema Energia;32,50;0
+PEAB3;Participações Aliança da Bahia;38,80;0
+RPAD3;Alfa Holdings;5,30;0
+CGAS3;Comgás;121,11;0
+CEED3;CEEE D;8,95;0
+DTCY3;Dtcom;2,95;0
+CLSC3;Celesc;116,00;0
+TKNO3;Tekno;207,00;0
+ESTR3;Estrela;3,01;0
+NEXP3;Brasil Brokers;2,89;0
+CTSA3;Santanense;2,69;0
+PETZ3;Petz;4,39;0
+RPAD6;Alfa Holdings;4,50;0
+SNSY3;Sansuy;11,00;0
+CALI3;Adolpho Lindenberg;16,05;0
+BALM3;Baumer;28,00;0
+CRPG3;Tronox Pigmentos;17,01;0
+BRSR5;Banrisul;15,10;0
+MERC4;Mercantil do Brasil Financeira;12,50;0
+CCTY3;REDVECO PROPERTIES S.A;12,00;0
+CCTY3;RDVC CITY;12,00;0
+BDLL3;Bardella;7,70;0
+MRSA3B;MRS Logística;39,00;0
+MWET4;Wetzel;8,63;0
+FRIO3;Metalfrio;209,98;0
+BIOM11;Biomm;2,75;0
+PSVM11;PORTO VM;4,90;0
+PATI4;Panatlântica;34,00;0
+BRKM6;Braskem;9,00;0
+EKTR3;Elektro;49,20;0

@@ -25,6 +25,7 @@ public class Acao extends Ativo {
         }
 
         char ultimo = t.charAt(t.length() - 1);
+
         if (ultimo == '3') {
             return TipoAcao.ORDINARIA;
         }
@@ -32,7 +33,7 @@ public class Acao extends Ativo {
             return TipoAcao.PREFERENCIAL;
         }
 
-        //se nao encixa em nenhum lugar eh invalido
+        // se nao encaixa em nenhum lugar eh invalido
         throw new AtivoInvalidoException("Ticker de ação inválido: " + ticker);
     }
 

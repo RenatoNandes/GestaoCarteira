@@ -1,0 +1,11 @@
+Ticker;Nome;Preço (USD);Algoritmo Consenso;Quantidade Máxima
+BTC;Bitcoin;92601.00;Proof of Work;21000000
+ETH;Ethereum;3249.30;Proof of Stake;
+BNB;Binance Coin;908.60;Proof of Staked Authority;200000000
+ADA;Cardano;0.40968;Proof of Stake;45000000000
+SOL;Solana;138.44;Proof of History;
+XRP;Ripple;2.27596;Consensus Protocol;100000000000
+LTC;Litecoin;82.668;Proof of Work;84000000
+DOT;Polkadot;2.18;Nominated Proof of Stake;
+AVAX;Avalanche;14.49;Proof of Stake;720000000
+LINK;Chainlink;13.7878;Proof of Stake;1000000000

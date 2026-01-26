@@ -1,0 +1,17 @@
+Ticker;Nome;Preço (USD);Bolsa de negociação;Setor
+NVDA;Nvidia Corporation;185.04;NASDAQ;Information Technology
+AAPL;Apple Inc.;259.04;NASDAQ;Information Technology
+GOOG;Alphabet Inc. Class C;326.01;NASDAQ;Communication Services
+MSFT;Microsoft Corporation;478.11;NASDAQ;Information Technology
+AMZN;Amazon.com Inc.;246.29;NASDAQ;Consumer Discretionary
+META;Meta Platforms Inc.;646.50;NASDAQ;Communication Services
+AVGO;Broadcom Inc.;332.48;NASDAQ;Information Technology
+TSMC;Taiwan Semiconductor Manufacturing Company;318.11;NYSE;Information Technology
+TSLA;Tesla Inc.;435.31;NASDAQ;Consumer Discretionary
+LLY;Eli Lilly and Company;1085.19;NYSE;Health Care
+XOM;Exxon Mobil Corporation;122.91;NYSE;Energy
+JPM;JPMorgan Chase & Co.;329.79;NYSE;Financials
+V;Visa Inc.;352.00;NYSE;Financials
+MA;Mastercard Incorporated;579.68;NYSE;Financials
+WMT;Walmart Inc.;113.15;NYSE;Consumer Staples
+BRK.B;Berkshire Hathaway Inc. Class B;750300.00;NYSE;Financials

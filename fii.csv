@@ -1,0 +1,549 @@
+Ticker;Nome;Setor;Preço (R$);Último Dividendo;Taxa de Administração
+ZIFI11;Zion Capital FII Unica;Fundo de Desenvolvimento;900,00;3,31;0,4
+ZAVI11;Zavit Real Estate Fund Closed Fund;Indefinido;10,06;0,11;0,5
+ZAVC11;Zavit Credito Imobiliario FII - Unica;Indefinido;9,01;0,13;0,6
+ZAGH11;Zagros Multiestrategia FII;Serviços Financeiros Diversos;10,10;0,06;0,7
+YUFI11B;YUFI11B;Indefinido;-;0,63;0,2
+YUFI11;Yuca Fundo de Investimento Imobiliario;Fundo de Desenvolvimento;15,00;29,23;0,4
+XTED11;XTED11;Lajes Corporativas;8,82;11,16;0,3
+XPSF11;Xp Selection Fundo de Fundos Inv Imob Fii;Fundo de Fundos;6,60;0,07;0,8
+XPPR11;XPPR11;Lajes Corporativas;12,54;0,07;1
+XPML11;XP Malls Fundo de Investimento Imobiliario;Shoppings;109,20;0,92;0,1
+XPLG11;XP Log Fundo de Investimento Imobiliario-FII;Imóveis Industriais e Logísticos;103,76;0,82;0,2
+XPIN11;XP Industrial Fundo de Investimento Imobiliario;Imóveis Industriais e Logísticos;81,81;0,85;0
+XPIE11;XP Infra II Fundo de Investimento em Participacoes em Infraestrutu;Indefinido;53,93;0,97;0,4
+XPID11;Xp Fundo de Investimento em Cotas de Fundos Incentivados de Investimento em Infraestrutura Reda Fixa;Indefinido;46,40;0,50;0,4
+XPHT11;XPHT11;Hotéis;123,00;0,41;0,3
+XPCM11;XP Corporate Macae FI Imobiliario - Un;Lajes Corporativas;8,08;0,02;0,5
+XPCI11;XP Credito Imobiliario Fdo Inv Mob;Papéis;82,95;0,88;0,5
+XPCA11;Xp Cred Agri FI Cadeias Pro Agrid Imob Fiagro-imo;Indefinido;8,35;0,11;0,4
+WTSP11B;WTSP11B;Misto;36,00;0,05;0,6
+WSEC11;FII WARREN CI;Indefinido;1,41;1,46;0,7
+WPLZ11;Shopping West Plaza FI Imobiliario - Un;Shoppings;46,45;0,37;0,3
+WHGR11;WHG Real Estate Fundo de Investimento Imobiliario Closed Fund;Indefinido;9,39;0,10;0,1
+VXXV11;Genesis Multiestrategia FI Imobiliario FII Unica;Fundo de Desenvolvimento;722,00;273,35;0,7
+VVRI11;V2 Renda Imobiliaria FII - FII;Indefinido;76,74;0,75;0,2
+VVPR11;VVPR11;Misto;101,50;0,89;0,6
+VVMR11;FI Imobiliario Multi Renda Urbana Closed Fund;Lajes Corporativas;85,00;0,20;0,3
+VVCR11;V2 Recebiveis Imobiliarios FII;Papéis;9,44;0,10;0,6
+VVCO11;V2 Edificios Corporativos FII;Lajes Corporativas;14,95;11,16;0,6
+VTPL11;Fundo de Investimento Imobiliario Plus;Papéis;64,25;0,60;0,6
+VTLT11;FII VOT LOG CI;Imóveis Industriais e Logísticos;88,98;2,54;0,6
+VTBL11;VTBL11;Outros;-;1,54;0,4
+VSLH11;Versalhes Recebiveis Imobiliarios - FII;Papéis;2,17;0,03;0,2
+VSHO11;FI Imobiliario Votorantim Shopping;Shoppings;74,94;0,95;1
+VSEC11;VSEC11;Papéis;0,21;2,05;0,1
+VRTM11;Fator Verita Multiestrategia FII;Misto;7,21;0,09;0,7
+VRTA11;Fator Verita Fundo Investimento Imobiliario - FII;Papéis;80,11;0,85;0,3
+VPPR11;V2 Prime Properties Fundo de Investimento Imobiliario Closed Fund;Lajes Corporativas;16,25;0,07;0,6
+VOTS11;Tivio Securities FII - Unica;Papéis;75,26;1,22;0,4
+VLOL11;VLOL11;Lajes Corporativas;88,00;16,30;0,9
+VLIQ11;VLIQ11;Indefinido;-;5,04;0,7
+VJFD11;JFDCAM Fundo Investimento Imobiliario;Papéis;150,00;2,10;0,5
+VIUR11;Vinci Imoveis Urbanos FI Imobiliario;Misto;6,01;0,09;0,8
+VISC11;Vinci Shopping Centers FI Imobiliario;Shoppings;108,50;0,81;0,3
+VINO11;Vinci Offices FII;Lajes Corporativas;5,16;0,05;1
+VILG11;Vinci Logistica Fundo de Investimento Imobiliario;Imóveis Industriais e Logísticos;99,30;0,74;0,4
+VIGT11;Vinci Energia FIP Infraestrutura;-;42,93;0,24;0,4
+VIFI11;VIFI11;Fundo de Fundos;6,96;0,07;0,8
+VIDS11;Vic Desenvolvimento - Vintage 20/21 FII;Fundo de Desenvolvimento;915,64;16,06;0,8
+VGRI11;Valora Renda Imobiliaria FII;Misto;8,29;0,12;0,1
+VGIR11;Valora RE III FI Imobiliario-FII;Papéis;9,82;0,13;0,2
+VGIP11;Valora Cri Indice de Preco FI Imobiliario - FII;Papéis;80,61;0,92;0,9
+VGII11;Valora Cri Infra II FII RL;Tecidos. Vestuário e Calçados;72,84;0,40;0,8
+VGIA11;Valora Cra FI Cadeias Prod Agro FIAGRO Imobiliario;Indefinido;10,15;0,14;0,2
+VGHF11;Valora Hedge Fund FI Imobiliario - FII - Unica;Misto;7,22;0,07;0,8
+VCRR11;Vectis Renda Residencial FII - 1;Imóveis Residenciais;66,99;0,50;1
+VCRI11;Vinci Credit Securities FI Imobiliario - Unica;Papéis;7,40;0,10;0,4
+VCRA11;Vectis Datagro Credito Agronegocio FIAGRO Imob;Indefinido;64,10;0,95;0,7
+VCJR11;Vectis Juros Real FI Imobiliario FII;Papéis;79,96;0,77;1
+VANG11;Icatu Vanguarda Inc Infraest FICFI RF CP LP - RL;Indefinido;100,61;1,00;0,8
+URPR11;Urca Prime Renda FII;Papéis;38,89;0,35;0
+URHF11;Urca Hedge Fund Estrategia Imob Fii Cf;Outros;70,25;1,07;0,1
+TVRI11;Tivio Renda Imobiliaria FI Imobiliario;Agências de Bancos;99,41;1,05;0,4
+TSER11;Tishman Speyer Renda Corporativa FII Closed Fund;Lajes Corporativas;97,00;1,04;0,8
+TRXY11;TRX Hedge FI Imobiliario RL;Outros;9,43;0,13;0,6
+TRXF11;TRX Real Estate FII Closed Fund;Imóveis Comerciais - Outros;96,98;1,00;0,4
+TRXB11;Trx Real Estate II Fundo de Investimento Imobiliario Closed Fund;Fundo de Desenvolvimento;165,00;4,05;0,4
+TRNT11;FI Imobiliario - FII Torre Norte;Lajes Corporativas;94,00;0,07;0,2
+TRBL11;FII Tellus Rio Bravo Renda Logistica - FII;Imóveis Industriais e Logísticos;68,80;0,53;0,3
+TORD11;Tordesilhas EI Fundo de Investimento Imobiliario Closed Fund;Misto;1,97;0,01;0,5
+TOPP11;RBR Top Off FII RL;Imóveis Comerciais - Outros;73,03;0,84;0,3
+TMPS11;Itau Tempus Fundo Investimento Imobiliario -Unica;Fundo de Fundos;88,24;0,88;0,6
+TJKB11;TJK Renda Imobiliaria FII RL;Indefinido;254,00;2,90;0,4
+TGAR11;FII TG Ativo Real;Fundo de Desenvolvimento;88,67;1,00;0,3
+TEPP11;Tellus Properties FI Imobiliario RL;Lajes Corporativas;8,69;0,08;0,9
+TELM11;Tellus Multiestrategia FII FII RL;Indefinido;10,00;0,22;0
+TCPF11;Treecorp Real Estate FII-I - Un;Misto;39,53;1,31;0,2
+SURE11;SURE11;Indefinido;-;0,60;0,6
+STRX11;Starx FI Imobiliario;Fundo de Desenvolvimento;140,16;0,97;0,9
+SRVD11;SRVD11;Indefinido;3,00;0,20;0,2
+SPXS11;FI Imobiliario Spx Syn Multiestrategia;Indefinido;9,10;0,11;0,8
+SPVJ11;SPVJ11;Shoppings;-;0,18;0,3
+SPTW11;SP Downtown Fundo Investimento Imobiliario - FII;Lajes Corporativas;38,29;0,60;0,6
+SPMO11;Supremo FII - Un;Indefinido;122,00;0,43;0,2
+SPDE11;FII WHG F SPCI ER;Indefinido;1.266,67;10,41;0,1
+SOLR11;Solarium FII - Fundo de Investimento Imob - Un;Imóveis Comerciais - Outros;1.051,35;4,77;0
+SOFF11;Fundo de Investimento Imobiliario Sofia;Misto;112,00;1,00;0,8
+SNME11;Suno Multiestrategia FI Imobiliario;Indefinido;9,65;0,15;0,9
+SNLG11;Suno Log Fundo de Investimento Imobiliario;Imóveis Industriais e Logísticos;1,52;0,84;0,1
+SNID11;Suno Infra Deb FICFII em Infra Renda Fixa CP;Indefinido;11,30;0,13;0
+SNFZ11;Suno Fazendas FIAGRO Imobiliario Unica;Misto;9,83;0,10;0,7
+SNFF11;Suno Fundo de Fundos de Investimento Imobiliario;Fundo de Fundos;82,40;1,10;0,6
+SNEL11;Suno Energias Limpas FI Imobiliario Closed Fund;Fundo de Desenvolvimento;8,77;0,10;0,4
+SNCI11;Suno Recebiveis Imobiliarios FI Imobiliario;Papéis;84,71;1,00;0,7
+SNAG11;Suno Agro Fiagro Im Unica;Papéis;11,14;0,13;0,4
+SMRE11;FII Smart R Est - FII RL;Incorporações;63,89;1,02;0,7
+SJAU11;Sj Au LogIstica Fundo de Investimento Imobiliario Closed Fund;Imóveis Industriais e Logísticos;0,60;20,13;0,8
+SIGR11;SIGR11;Indefinido;99,90;1,30;0,2
+SHSO11;SHSO11;Indefinido;-;0,42;0,7
+SHPP11;Shop Pat P FII RL;Shoppings;10,50;0,05;0,2
+SHPH11;FII Shopping Patio Higienopolis;Shoppings;932,00;3,50;0
+SHOP11;Multi Shoppings Fundo Investimento Imobiliario;Shoppings;55,00;6,75;0,7
+SEQR11;Sequoia III Renda Imobiliaria FII;Misto;53,67;0,58;0,2
+SEED11;Hedge Seed Fundo de Investimento Imobiliario Closed Fund;Indefinido;98,34;0,78;0,9
+SDIL11;SDIL11;Imóveis Industriais e Logísticos;96,50;0,75;0,8
+SCPF11;SCP Fundo Investimento Imobiliario;Shoppings;2,69;0,02;0,4
+SARE11;FII SANT RENCI;Misto;4,80;0,03;0,1
+SAPI11;Santander Papeis Imob FII;Misto;8,91;0,21;1
+SALI11;SALI11;Misto;-;0,90;0,6
+RZZV11;Raiz Desenvolvimento I Fdo Inv Imob Cf;Misto;1.050,00;7,22;1
+RZZR11;Raizz RL FII RL;Imóveis Industriais e Logísticos;138,97;1,21;0,9
+RZZI11;Raizz Desenvolvimento II FI Imobiliario RL Closed Fund;Misto;1.000,00;4,40;0,5
+RZTR11;FI Imobiliario Riza Terrax unica;Misto;97,34;1,00;0,9
+RZLC11;Riza Lecci FI Imob RL - Sen;Papéis;1.002,46;13,10;0,7
+RZEO11;Riza EOS FI Cadeias Prod Agind - Fiagro - Imo - Un;Indefinido;187,78;2,22;0,5
+RZAT11;Riza Arctium Real Estate FII Closed Fund;Imóveis Industriais e Logísticos;89,30;0,85;0,1
+RZAK11;Riza Akin Fundo de Investimento Imobiliario FII;Papéis;84,85;1,10;0,3
+RZAG11;FI nas Cadeias Prod Ag Riza Agro FIAGRO Imob - Un;Indefinido;8,73;0,15;0,7
+RVBI11;RVBI11;Fundo de Fundos;60,23;0,65;0,3
+RURA11;Itau Asset Rural Fiagro Imobiliario;Indefinido;8,69;0,11;0,4
+RSPD11;RB Capital Desenvolvimento Residencial III - FII;Fundo de Desenvolvimento;850,00;3,02;0,5
+RRCI11;RRCI11;Papéis;80,25;2,34;0,3
+RPRI11;RBR Premium Recebiveis Imobiliarios FII - Unica;Papéis;87,13;1,24;0,2
+ROOF11;Fundo de Investimento Imobiliario Rooftop I;Fundo de Desenvolvimento;350,00;13,55;0,2
+RNGO11;FII Imobiliario Rio Negro;Lajes Corporativas;52,07;0,29;0,7
+RNDP11;RNDP11;Papéis;40,50;40,38;0,7
+RMAI11;RMAI11;Lajes Corporativas;44,30;0,27;0,4
+RINV11;Real Investor Fundo de Investimento Imobiliario;Indefinido;108,75;1,05;0,7
+RIFF11;RIFF CIC ClI Infraestrutura Renda Fixa RL;Indefinido;7,78;0,01;0,7
+RFOF11;Fii Rb Capital I Fundo de Fundos;Fundo de Fundos;63,84;0,65;0,6
+RENV11;CPV Energia FII Resp Limitada;Serviços Financeiros Diversos;6,97;0,08;0,7
+RELG11;Fundo de Investimento Imobiliario Rec Logistica;Imóveis Industriais e Logísticos;65,71;0,80;0,7
+REIT11;Singulare Fundo de Investimento Imobiliario Unica;Papéis;82,11;7,27;0,8
+RECT11;FI Imobiliario - FII Rec Renda Imobiliaria;Lajes Corporativas;38,80;0,45;0,2
+RECR11;FII Rec Recebiveis Imobiliarios;Papéis;82,97;0,82;0,7
+RECM11;Rec Multiestrategia FI Imob RL;Papéis;8,71;0,11;0,4
+RECD11;REC Fundo de Cri Cotas Amortizaveis FII RL;Papéis;7,70;1,31;1
+RDLI11;RBR Desenv Logistico I - FI Imobiliario RL;Lajes Corporativas;124,99;18,19;0,5
+RDIV11;Fundo de Investimento Imobiliario RBR Desenv IV Resp Lim Closed Fund;Outros;100,00;8,00;0,5
+RDCI11;RDCI11;Indefinido;-;1,44;0,3
+RCRB11;FI Imobiliario Rio Bravo Renda Corporativa;Lajes Corporativas;140,65;0,95;0
+RCFF11;Rbr Desenvolvimento Comercial Feeder FOF - FII;Fundo de Fundos;80,00;3,55;0,6
+RBVO11;RBVO11;Papéis;5,32;5,66;0,5
+RBVA11;FII Rio Bravo Renda Varejo-FII;Varejo;9,94;0,09;0,3
+RBTS11;RB Capital TFO Situs FI Imobiliario - FII;Fundo de Desenvolvimento;392,64;7,34;0,1
+RBRY11;Fdo Inv Imob Rbr Private Credito Imob Cef;Papéis;98,91;1,25;0,5
+RBRX11;RBR Plus Multiestrategia Real Estate FII Closed Fund;Indefinido;8,31;0,09;0,3
+RBRS11;Rio Bravo Renda Residencial FI Imobiliario;Fundo de Desenvolvimento;36,10;0,17;0,9
+RBRR11;FI Imobiliario RBR Rendimento High Grade;Papéis;87,80;0,80;0,7
+RBRP11;FI Imobiliario RBR Properties - FII;Lajes Corporativas;54,73;0,40;0
+RBRM11;RBRM11;Fundo de Desenvolvimento;94.794,81;5.302,02;0,2
+RBRL11;Rbr Log Fundo de Investimento Imobiliario;Imóveis Industriais e Logísticos;92,46;0,75;0,4
+RBRI11;FI Imobiliario FII RBR Desenvolvimento III;Fundo de Desenvolvimento;491,18;103,82;0,1
+RBRF11;RBR Plus Multiestrategia Real Estate FII;Fundo de Fundos;6,53;0,33;0,8
+RBRD11;RB Capital Renda II FI Imobiliario;Varejo;41,01;0,66;0,2
+RBOP11;FI Imo Rio Bravo Oportunidades Imobiliarias - FII;Lajes Corporativas;208,77;0,50;0,5
+RBLG11;RB Capital Logistico FI Imobiliario FII;Imóveis Industriais e Logísticos;60,00;0,13;0,2
+RBIR11;RB Cap Desenv Residencial IV FII;Fundo de Desenvolvimento;93,17;0,82;0,4
+RBIF11;Rio Bravo Fd Incnt Inv em Infrst ESG Renda Fixa CP;Indefinido;74,34;1,80;0,2
+RBHY11;Rio Bravo Credito Imobiliario High Yield FII Unica;Papéis;76,70;1,05;0,3
+RBHG11;Rio Bravo Credito Imobiliario High Grade FII;Papéis;65,34;0,80;0,8
+RBGS11;RBGS11;Shoppings;28,45;0,18;0
+RBFY11;Rio Bravo For You Fundo de Investimento Imobilirio de Responsabili;Imóveis Residenciais;70,18;0,24;0,3
+RBFF11;Rio Bravo Fundo de FII - Un;Fundo de Fundos;51,94;1,02;0,5
+RBDS11;RB Capital Desenvolvimento Residencial II FII;Fundo de Desenvolvimento;2,03;2,35;0,5
+RBCO11;RBCO11;Lajes Corporativas;-;0,50;0,5
+QNTS11;QNTS11;Indefinido;-;1,72;0,3
+QIRI11;QIRI11;Papéis;78,04;89,64;0,2
+QAMI11;QAMI11;Papéis;84,68;1,00;0,9
+QAGR11;QAGR11;agro;41,00;0,46;0,8
+PVBI11;FI Imobiliario VBI Prime Properties;Lajes Corporativas;80,01;0,45;1
+PULV11;FII PULV CI;Papéis;8,72;0,71;0,9
+PSEC11;Patria Securities FII;Fundo de Fundos;64,61;0,65;0
+PRTS11;PRTS11;Shoppings;17.396,42;0,05;1
+PRSV11;Presidente Vargas FI Imobiliario - Classe Unica;Lajes Corporativas;33,00;14,10;0,2
+PRIF11;Patria Cred Infra Renda FIFCFII Infra Renda Fixa;Indefinido;101,74;1,00;0,4
+PQDP11;FII - FII Parque Dom Pedro Shopping Center;Shoppings;2.317,00;17,60;0,9
+PQAG11;Parque Anhanguera FII Unica;Imóveis Industriais e Logísticos;54,59;0,48;0,5
+PPEI11;Prisma Proton Energia FIP em Infraestrutura;Indefinido;78,66;4,25;0,3
+PORD11;Polo Credito Imobiliario - FII;Papéis;8,02;0,10;0,4
+PNRC11;Panorama Real Estate Credito FII;Indefinido;61,00;0,60;0,5
+PNPR11;Panorama Properties FII Unica;Fundo de Desenvolvimento;48,00;19,05;0,8
+PNDL11;Panorama Desenvolvimento Logistico FII Closed Fund;Fundo de Desenvolvimento;1.200,00;3,00;1
+PNCR11;FII PNCR CI;Imóveis Residenciais;45,20;46,09;0,9
+PMLL11;Patria Malls Fii Resp Limitada Cf;Shoppings;104,49;0,86;0,8
+PMIS11;Paramis Hedge Fund FI Imobiliario;Misto;8,36;0,12;0,9
+PMFO11;Speciale Real Estate Fund of Funds FII;Misto;88,14;0,84;0,7
+PLRI11;Polo FII Recebiveis Imobiliarios I;Papéis;11,37;0,25;0,5
+PLOG11;PLOG11;Imóveis Industriais e Logísticos;66,71;0,70;0,9
+PLCR11;PLCR11;Papéis;78,20;5,23;0,1
+PLCA11;Plural BRB Credito Agro - Fiagro - Imob - Unica;Indefinido;73,99;1,00;0,7
+PLAG11;VBI Agro - Fundo de Investimento Imobiliario;Indefinido;50,71;0,48;0,7
+PICE11;Patria Infraestrutura Energia Core Fundo de Investimento em Partic;Indefinido;32,98;0,50;0,9
+PFIN11;Perfin Apollo Energia FIP Infraestrutura;Indefinido;77,17;0,80;0,3
+PEMA11;Performa Real Estate FII - Unica;Papéis;41,25;0,70;0,6
+PDBM11;PDM Malls Fundo de Inves Imob Resp Lim CLosed Fund;Shoppings;115,00;0,88;0,2
+PCIP11;Patria Cred Imob Precos FII RL;Papéis;84,56;0,83;0,9
+PCAS11;PCAS11;Indefinido;-;28,57;0
+PATL11;Patria Logistica Fundo de Investimento Imobiliario;Imóveis Industriais e Logísticos;65,99;0,70;0,4
+PATC11;Patria Edificios Corporativos FI Imobiliario-FII;Fundo de Desenvolvimento;42,00;0,05;0,3
+PATB11;PATB11;Lajes Corporativas;-;3,69;0,6
+PATA11;Patagonia Capital Multiestrategia Fdo Inv Imob Cf;Misto;10,34;0,09;0,1
+PABY11;Fundo de Investimento Imobiliario Panamby;Fundo de Desenvolvimento;12,25;0,13;0,2
+OURE11;OURE11;Misto;78,20;1,09;0,4
+OULG11;FII True Multiestrategia RL;Imóveis Industriais e Logísticos;24,04;15,52;0,1
+OUJP11;Ourinvest JPP FI Imobiliario;Papéis;78,50;1,03;0,7
+OUFF11;OUFF11;Fundo de Fundos;61,10;0,76;0,4
+ORPD11;ORPD11;Fundo de Desenvolvimento;93,00;1,38;0,2
+OPTM11;FI Imobiliario Patrimonial IV - Unica;Misto;-;0,14;0,6
+ONEF11;ONEF11;Lajes Corporativas;200,03;2,85;0,1
+ONDV11;Onda Invest Multiestrategia FII Resp Limitada Closed Fund;Exploração de Imóveis;9,77;0,12;0,3
+OIAG11;Ourinvest Innovation Fiagro Imobiliario Unica;Indefinido;8,90;0,12;0,9
+OGIN11;Nikos Fundo de Investimento em Cotas de Fundos Cf;Misto;8,01;0,10;1
+OGHY11;OGHY11;Indefinido;8,72;9,40;0,5
+OCRE11;Octo Fundo de Investimento Imobiliario Cef;Papéis;74,00;0,42;0,6
+OBAL11;Opportunity Balassiano FII A;Imóveis Residenciais;1.095,00;81,96;0,4
+NVRP11;FIP Nova Raposo Multiestrategia;Indefinido;170,00;87,50;0,5
+NVIF11B;NVIF11B;Fundo de Desenvolvimento;227,50;1,11;0,4
+NVIF11;Nova I Fundo de Investimento Imobiliario Closed Fund;Fundo de Desenvolvimento;227,50;0,89;0,9
+NVHO11;FI Imobiliario - FII Novo Horizonte - Un;Hospitalar;13,00;0,09;0,8
+NUIF11;Nu Infra FICII Renda Fixa Credito Privado;Indefinido;95,45;1,35;0,2
+NSLU11;FII Hospital Nossa Senhora de Lourdes;Hospitalar;206,96;1,37;0,6
+NEXG11;Nex Crd Agro FI Nas Cad Prod do Agrneg Fiagro-Imb;Agricultura;130,26;0,75;0,4
+NEWU11;NewPort Renda Urbana FII;Lajes Corporativas;108,00;1,10;0,3
+NEWL11;Newport Logistica FII;Imóveis Industriais e Logísticos;114,28;1,08;0,1
+NELO11;NELO11;Logística;-;45,59;0,4
+NCRI11;Navi Credito Imobiliario FII;Papéis;9,11;0,10;0,9
+NCHB11;NCHB11;Papéis;7,97;0,11;0
+NAVT11;Navi Imobiliario FOF de Investimento Imobiliario;Papéis;72,50;0,75;0,4
+NAUI11;Ten Desenvolvimento FII;Outros;1.100,00;179,76;0,6
+MXRF11;Maxi Renda Fundo de Investimento Imobiliario - FII;Papéis;9,51;0,10;0,2
+MORE11;MORE11;Fundo de Fundos;76,21;6,02;0,7
+MMPD11;MMPD11;Indefinido;-;1,72;0,7
+MINT11;MINT11;Educacional;96,50;14,67;0,1
+MGRI11;Mogno Properties FII Unica;Indefinido;58,18;1,35;0,5
+MGLG11;MGLG11;Imóveis Industriais e Logísticos;40,99;0,35;0,2
+MGHT11;Fundo de Investimento Imobiliario Mogno Hoteis;Hotéis;19,33;0,13;0,5
+MGFF11;MGFF11;Fundo de Fundos;69,99;4,26;0,3
+MGCR11;MGCR11;Papéis;9,40;0,33;0,8
+MFII11;Merito Desenvolvimento Imobiliario I FII;Fundo de Desenvolvimento;75,05;1,07;0,5
+MFAI11;MFAI11;Fundo de Fundos;69,98;34,18;0,5
+MCRE11;Maua Capital Real Estate FI Imobiliario;Papéis;9,44;0,11;0,9
+MCLO11;Maua Capital Logistica FI Imobiliario RL;Imóveis Industriais e Logísticos;10,18;0,09;0,3
+MCHY11;MCHY11;Papéis;8,58;0,10;0,9
+MCHF11;MCHF11;Papéis;9,10;2,59;0
+MCEM11;Merito Cemiterios FII FII P;Shoppings;62,81;0,67;1
+MCCI11;FII Maua Capital Recebiveis Imobiliarios FII;Papéis;91,00;1,00;0,3
+MBRF11;MBRF11;Lajes Corporativas;-;0,50;0,7
+MAXR11;FI Imobiliario FII Max Retail;Varejo;62,00;0,22;0,6
+MATV11;MATV11;Indefinido;86,63;0,60;0,1
+MANA11;Manati Capital Hedge Fund FI Imobiliario;Indefinido;9,27;0,11;0,5
+LVBI11;Fundo de Investimento Imobiliario - VBI Logistico;Imóveis Industriais e Logísticos;110,67;0,75;0,1
+LUGG11;LUGG11;Imóveis Residenciais;72,82;0,59;0,4
+LTMT11;Speciale Blue Real Asset FII - Unica;Imóveis Residenciais;98,36;8,38;0,7
+LSPA11;LSPA11;Papéis;24,01;20,85;0
+LSOI11;LCP Special Opportunities I FII Responsa Ilimitada;Misto;12,26;0,10;0,7
+LSAG11;Leste FI Cadeias Prod Agroin - Fiagro - Imo - Un;Indefinido;85,00;1,10;0,3
+LRDI11;FII - Leblon Realty Desenvolimento I;Indefinido;200,00;32,60;0,8
+LPLP11;Lago da Pedra - FI Imobiliario A;Indefinido;227,90;16,14;0,8
+LOFT11B;LOFT11B;Fundo de Desenvolvimento;29,90;47,90;0,5
+LLAO11;Bs2 Allinvestments Fdo Inv Imob Cef;Misto;57,20;7,31;0,9
+LIFE11;Life Capital Partners FI Imobiliarios;Imóveis Comerciais - Outros;8,28;0,12;0,8
+LGCP11;LGCP11;Imóveis Industriais e Logísticos;82,95;0,80;0,2
+LFTT11;LFTT11;Papéis;2,10;0,21;0,7
+LAVF11;LAVF11;Indefinido;-;1,30;0,3
+LASC11;Legatus Shoppings FI Imobiliario FII;Shoppings;110,51;0,51;0,3
+LAFI11;Lavoura I Fiagro Imobiliario;Misto;115,97;3,42;1
+KRES11;KRES11;Misto;-;0,00;0,3
+KORE11;Kinea Oportunidades Real Estate FII - Unica;Lajes Corporativas;70,16;1,25;0,7
+KOPA11;Kinea Oportunidades Agro I Fiagro - Imobiliario;Indefinido;614,52;120,00;0,9
+KNUQ11;Kinea Unique HY CDI FI Imobiliario - Unica;Indefinido;104,64;1,35;0,3
+KNSC11;Kinea Securities FI Imobiliario FII;Papéis;8,71;0,09;0,9
+KNRI11;Kinea Renda Imobiliaria FII;Misto;158,01;1,25;0,9
+KNRE11;Kinea II Real Estate Equity FII;Fundo de Desenvolvimento;0,33;0,00;0,8
+KNPR11;KNPR11;Indefinido;-;2,81;0,8
+KNOX11;Knox Debt FI em Participacoes em Infraestrutura;Indefinido;98,03;2,67;0,7
+KNIP11;Kinea Indices de Precos FII - Unica;Papéis;90,38;0,70;0,9
+KNHY11;Kinea High Yield CRI FI Imobiliario-FII;Papéis;98,80;1,00;0,6
+KNHF11;Kinea Hedge Fund FI Imobiliario Resp Limitada;Indefinido;96,08;1,00;0,7
+KNCR11;Kinea Rendimentos Imobiliarios FII;Papéis;105,10;1,30;0,1
+KNCA11;Kinea Credito Agro FIAGRO-Imobiliario;Indefinido;96,75;1,20;0,8
+KIVO11;Kilima Volkano Recebiveis Imobiliarios FII;Papéis;63,99;0,87;0,1
+KISU11;Kilima Fi Em Cotas Fdo Imob Suno 30;Fundo de Fundos;7,06;0,07;0,4
+KINP11;KINP11;Fundo de Desenvolvimento;10,00;2,90;0,3
+KFOF11;Fundo de FI Imobiliario Kinea FII RL;Fundo de Fundos;85,95;0,80;0,8
+KFEN11;Kinea Fenix FII Responsabilidade Ltda - Unica;Indefinido;1.100,00;9,23;0,8
+KEVE11;Even II Kinea Fundo de Investimento Imobiliario;Fundo de Desenvolvimento;725,00;61,00;0,7
+KDOL11;Kinea Agro Income USD Fiagro-Imobiliario;Misto;93,00;0,40;0,3
+KDIF11;Kinea Infra - FIC de Fundos Inc Inv Infra RF CP;Indefinido;129,84;1,45;0,6
+KCRE11;Kinea Creditas FI Imobiliario - FII;Indefinido;8,80;0,09;1
+JURO11;Sparta Inf FIC FIII RF CP RL;Indefinido;101,58;1,00;1
+JSRE11;JS Real Estate Multigestao FII;Misto;66,66;0,48;0,9
+JSCR11;JS Recebiveis Imobiliarios FII;Papéis;8,26;0,10;0,9
+JSAF11;JS Ativos Financeiros FI Imobiliario;Fundo de Fundos;7,68;0,08;0,9
+JPPA11;JPP Capital Recebiveis Imobiliarios FII;Papéis;81,56;1,21;0,1
+JMBI11;Jivemaua Bossanova FIC Fund Inc Invest Infra RF RL;Outros;87,55;1,15;0,7
+JGPX11;FI Cad Produt Agro JGP Credito FIAGRO Imobiliario;Indefinido;72,35;1,10;0,3
+JFLL11;Jfl Living FI Imobiliario Classe Unica;Imóveis Residenciais;65,28;1,10;0,9
+JCIN11;JHFS Capital Institucional-FII;Fundo de Fundos;148,90;0,27;0,1
+JCCJ11;JHSF Capital Cidade Jardim - FII;Papéis;158,00;1,77;0,8
+JBFO11;JBFO11;Papéis;15,03;7,77;0,2
+JASC11;JASC Renda Varejo Essencial FII;Imóveis Comerciais - Outros;92,98;0,69;0,3
+IVCI11;Icatu Van CI FII RL;Papéis;96,86;0,82;0
+ITRI11;Itau Total Return Fundo Investimento Imobiliario;Shoppings;82,85;1,30;0,9
+ITIT11;Inter Teva Indice de Tijolo FI Imobiliario;Fundo de Fundos;69,39;0,61;0,7
+ITIP11;Inter Teva Indice de Papel FI Imobiliario;Papéis;65,36;0,67;0,4
+ISCJ11;ISCJ11;Papéis;50,71;1,60;0,8
+IRIM11;Iridium Fundo de Investimento Imobiliario Closed Fund;Indefinido;68,85;0,84;0,5
+IRIF11;Iridium Infra FICFII em Infraestrutura Renda Fixa;Papéis;9,40;0,11;0,5
+IRDM11;FII IRIDIUM CI;Papéis;58,31;4,31;0,1
+INRD11;Inter Residence Fdo Inv Imob Cf;Fundo de Desenvolvimento;75,47;0,67;0,8
+INLG11;Inter Logistica Fundo de Investimento Imobiliario Closed Fund;Imóveis Industriais e Logísticos;76,71;0,76;0,9
+INFB11;Drys FICFII em Infra Renda Fixa;Indefinido;98,97;1,00;0,3
+INFA11;Fator Infr Fundo Inc Inv Infraestrutura Renda Fixa;Outros;9,82;0,09;0,6
+IMOV11;IMOV11;Indefinido;-;0,09;0,9
+IFRI11;Itau FICF Inc Inv Fin Infra CDI RF CP - RL;Misto;103,50;1,40;0,4
+IFRA11;Itau FICF Inc Inv Infra RF CP;Indefinido;99,30;0,85;0,3
+IDUA11;FII de Unidades Autonomas IV;Imóveis Comerciais - Outros;64,42;1,72;0,7
+IDGR11;IDGR11;Misto;1,50;0,09;0,1
+IDFI11;IDFI11;Indefinido;2,00;1,56;0,7
+ICRI11;Itau Credito Imobiliario IPCA FII - Unica;Misto;90,53;0,95;0,3
+ICNE11;Icone FII RL;Imóveis Residenciais;769,63;0,92;0,6
+IBFF11;IBFF11;Fundo de Fundos;66,40;14,79;0,6
+IBCR11;FI Imobiliario de Cri Integral Brei;Papéis;48,65;0,70;0,2
+IBBP11;Invista Brazilian Business Park FII Ordin;Imóveis Industriais e Logísticos;9,00;0,08;0,7
+IAGR11;SFI Invest do Agronegocio - Fiagro-imob UNICA;Indefinido;4,29;0,01;0,6
+IAAG11;Inter Amerra - Fiagro - Imobiliario;Indefinido;8,59;0,13;0,5
+HYPI11;FI Hire Properties Closed Fund;Outros;180,54;0,38;0,7
+HUSI11;Husi Fundo de Investimento Imobiliario Unica;Hospitalar;1.220,00;8,42;0,5
+HUSC11;FII Hospital Unimed Sul Capixaba;Hospitalar;95,52;1,05;0,2
+HUCG11;FII Hospital Unimed Campina Grande - Un;Hospitalar;99,50;0,74;0
+HTMX11;FI Imobiliario - FII Hotel Maxinvest;Hotéis;141,85;1,25;0,3
+HSRE11;HSI Renda Imobiliaria FII;Misto;106,00;0,95;0,9
+HSML11;HSI Malls Fundo de Investimento Imobiliario;Shoppings;91,08;0,70;0,8
+HSLG11;HSI Log I FI Imobiliario;Imóveis Industriais e Logísticos;91,44;0,72;0,8
+HSAF11;HSI Ativos Financeiros FII;Papéis;80,42;0,95;1
+HRES11;FII Hire Residencial I FII;Imóveis Residenciais;141,53;1,76;0,1
+HREC11;Hedge Recebiveis Imobiliarios FII - Un;Papéis;8,05;0,08;0,8
+HRDF11;Hedge Realty Development FII - Un;Fundo de Desenvolvimento;3,41;6,80;0,8
+HPDP11;Hedge Shopping Parque Dom Pedro FII - Un;Shoppings;89,35;0,56;0,1
+HOSI11;Fundo de Investimento imobiliario Housi;Imóveis Residenciais;85,42;0,24;0
+HOFC11;Hedge Office Income FI Imobiliario - Un;Lajes Corporativas;29,62;0,21;0,4
+HLOG11;Hedge Logistica FII - Un;Imóveis Industriais e Logísticos;9,22;0,14;0,7
+HILG11;Hire Log I Fundo de Investimento Imobiliario Closed Fund;Indefinido;184,96;1,46;0,4
+HGRU11;Patria Renda Urbana FII RL Unica;Misto;126,05;1,45;0,9
+HGRE11;Patria Escritorios FII RL Unica;Lajes Corporativas;124,20;1,50;0,7
+HGPO11;Patria Prime Offices - FI Imob - Resp Lim - Unica;Lajes Corporativas;145,86;57,05;0,9
+HGLG11;Patria Log FII RL;Imóveis Industriais e Logísticos;156,99;1,10;0,3
+HGIC11;HGI Creditos Imobiliarios FII;Papéis;65,99;0,80;0,8
+HGCR11;Patria Recebiveis Imobiliarios FII RL;Papéis;97,79;1,00;0,7
+HGBS11;Hedge Brasil Shopping FI Imobiliario - Un;Shoppings;19,97;0,15;0,5
+HGBL11;Hedge Brasil Logistico Industrial FII RL;Misto;9,32;0,08;0,7
+HGAG11;High Fundo de Investimento Agro FIAGRO Imobiliario;Indefinido;17,00;0,14;1
+HFOF11;Hedge Top FOF II 3 FI Imobiliario - Un;Fundo de Fundos;6,45;0,06;0,6
+HDEL11;Hedge Desenvolvimento Logistico FII Closed Fund;Imóveis Industriais e Logísticos;100,02;15,30;0,8
+HCTR11;Hectare CE - FI Imobiliario;Papéis;21,77;0,29;0,7
+HCRI11;FII Hospital Da Crianca;Hospitalar;296,34;2,73;0,6
+HCRA11;HCRA11;Indefinido;10,22;14,85;0
+HCHG11;Hectare Recebiveis High Grade FII;Papéis;80,95;0,70;0,1
+HBRH11;HBRH11;Lajes Corporativas;90,80;0,50;0,3
+HBCR11;FI Imobiliario Hbc Renda Urbana - Cl Un;Indefinido;144,00;0,54;0,3
+HABT11;Habitat Recebiveis Pulverizados FII;Papéis;74,61;0,95;0,9
+HAAA11;Hedge AAA Fundo de Investimento Imobiliario - Un;Lajes Corporativas;53,14;1,30;0,7
+GZIT11;Gazit Malls FI Imobiliario;Indefinido;47,86;0,78;0
+GURB11;GURB11;Indefinido;108,00;0,70;0,2
+GTWR11;Fundo Investimento Imobiliario Green Towers;Lajes Corporativas;82,01;0,90;1
+GTLG11;GTLG11;Imóveis Industriais e Logísticos;63,99;60,62;0,8
+GSFI11;General Shopping e Outlets do Brasil FII Unica;Shoppings;11,00;0,00;0,1
+GRWA11;Greenwich Agro FI Cad Prod Agro FIAGRO Imobiliario;Indefinido;8,24;0,09;0,1
+GRUL11;Icatu Van Gru L FII RL;Logística;8,83;0,08;0
+GLPF11;Galapagos Feeder Logistico FII RL;Logística;106,41;0,81;0,1
+GLOG11;Genial Logistica FII - Cl Un;Imóveis Industriais e Logísticos;66,00;0,41;0,3
+GLCR11;Galapagos Credito Estr Prazo Determinado FII RL;Papéis;100,95;0,90;0,9
+GGRC11;GGR Covepi Renda FII - RL;Imóveis Industriais e Logísticos;9,85;0,10;0,4
+GFDL11;Galapagos Feeder Desenvolvimento Logistico FII RL;Logística;109,81;0,16;0,6
+GESE11B;GESE11B;Educacional;1.520,00;1.112,72;0,5
+GCRI11;Galapagos Recebiveis Imobiliarios FI Imobiliario;Papéis;65,15;0,80;0
+GCRA11;Galapagos Recebiveis do Agr Fiagro Im Unica;Indefinido;55,15;0,68;0,4
+GCOI11;Galapagos Special Oportunities FII;Indefinido;72,86;32,50;0,7
+GARE11;Guardian Real Estate FII de RL Unica;Imóveis Industriais e Logísticos;9,01;0,08;0,3
+GAME11;FII Guardian Multiestrategia Imobiliaria I;Indefinido;9,34;0,10;0
+FZDB11;051 Agro Faze III FI Nas Cad Prod Agro Fiagro Imob;Indefinido;144,20;4,21;0,1
+FZDA11;Tane Fzda FI Cadeias Produtivas Agroindustriais;Indefinido;131,00;4,11;0,2
+FYTO11;FII FIII Fyto RI RL;Papéis;8,75;0,11;0,1
+FVPQ11;FI Imobiliario Via Parque Shopping-FII;Shoppings;72,01;0,50;0,4
+FTCA11;Fyto Rec Agro FI RL;Indefinido;9,34;0,14;0,5
+FRHY11;FRHY11;Indefinido;-;1,03;0,6
+FPOR11;Porto Sudeste Royalties FIP em Infraestrutura;FIP-IE;23,50;0,15;0,5
+FPAB11;FI Imobiliario Projeto Agua Branca - Un;Lajes Corporativas;210,94;1,60;0,8
+FMOF11;FII Memorial Office RL - Unica;Lajes Corporativas;39,15;1,40;0,6
+FLRP11;Hedge Floripa Shopping FII - Unica;Shoppings;22,20;0,15;0,7
+FLMA11;FI Imobiliario Continental Square Faria Lima;Lajes Corporativas;157,24;1,17;0,4
+FLFL11;FLFL11;Fundo de Desenvolvimento;-;0,18;0,4
+FLCR11;Faria Lima Capital Recebiveis Imobiliarios I - FII;Papéis;95,90;1,00;0,4
+FISC11;FI Imobiliario SC 401;Lajes Corporativas;55,15;0,31;0,9
+FIIP11B;FIIP11B;Imóveis Industriais e Logísticos;161,37;1,40;0,4
+FIIP11;RB Capital Renda I Fundo de Investimento Imobiliario Closed Fund;Imóveis Industriais e Logísticos;150,11;1,40;0,4
+FIIB11;FII Industrial do Brasil - Un;Imóveis Industriais e Logísticos;477,74;3,58;0,5
+FIGS11;General Shopping Ativo e Renda FII - Un;Shoppings;46,24;0,48;0,7
+FGAA11;FG/Agro FI Cad Prod Agroindustr Fiagro Imobiliario;Indefinido;9,22;0,12;0,6
+FCFL11;FI Imobiliario Campus Faria Lima;Educacional;125,13;0,92;0,1
+FATN11;BRC Renda Corporativa FII - Un;Lajes Corporativas;85,76;0,80;0,6
+FAOE11;FAOE11;Indefinido;926,90;11,16;0,8
+FAMB11B;FAMB11B;Lajes Corporativas;609,99;1.001,61;0,3
+FAED11;FI Imobiliario Anhanguera Educacional;Educacional;155,43;1,66;0
+EXES11;Exes Fundo de Investimento Imobiliario;Indefinido;9,46;0,13;0,8
+EURO11;Fundo de Investimento Imobiliario Europar - FII;Imóveis Industriais e Logísticos;320,00;2,08;0,3
+ESUU11;FIP Infra-Estr BB Votorantim Energ Sustentavel I A;Indefinido;32,00;63,84;0,1
+ESUT11;FIP Infra-Estr BB Votorantim Ene Sustentavel III A;Indefinido;32,00;67,49;0,5
+ESUD11;FIP Infra-Estr BB Votorantim Ener Sustentavel II A;Indefinido;243,00;72,93;0,9
+ERPA11;Europa 105 - Fundo de Investimento Imobiliario;Lajes Corporativas;130,99;0,93;0,2
+ERCR11;Estoque Residencial Com Rio de Janeiro FII Sen;Varejo;15.707,85;545,56;0,1
+EQIR11;EQI Recebiveis Imobiliarios FI Imobiliario;Indefinido;8,29;0,10;0,9
+EQIA11;EQIA11;Fiagro;-;0,45;0,6
+ENDD11;Endurance Debt FIP em Infraestrutura;Indefinido;107,95;5,42;0,9
+EMET11;Emet Multiestrategia FI Imobiliario RL;Misto;10,00;0,34;0,3
+EIRA11;Aroeira FII RL Unica;Outros;104,40;1,28;0,6
+EGAF11;Ecoagro I FI Cadeias Prod Agroindust Fiagro Imobil;Indefinido;94,60;1,49;0,8
+EDGE11;Edge FII Responsabilidade Limitada Unica;Papéis;1.071,80;79,24;0,7
+EDGA11;FI Imobiliario - FII Edificio Galeria;Lajes Corporativas;13,98;0,02;0,7
+EDFO11B;EDFO11B;Lajes Corporativas;229,98;0,49;0,5
+DVFF11;Fundo de Investimento Imobiliario Devant FOF Imobiliarios;Fundo de Fundos;5,98;0,07;0,9
+DRIT11B;DRIT11B;Lajes Corporativas;83,30;0,53;0,2
+DPRO11;Devant Properties FI Imobiliario;Indefinido;6,33;0,06;0,6
+DLMT11;DLMT11;Varejo;-;0,00;0,9
+DEVA11;Devant Recebiveis Imobiliarios FII;Papéis;26,76;0,44;0,7
+DCRA11;Devant FI Cad Prod Agroindustriais - Fiagro - Imob;Indefinido;7,38;0,09;0,9
+DAYM11;Daycoval Real Estate Multiestrategia FII RL;Lajes Corporativas;3,86;0,04;0
+DAMT11B;DAMT11B;Shoppings;11,45;0,40;0,1
+DAMA11;Dama FI Imobiliario RL - Unica;Misto;7,34;0,08;0,8
+CYCR11;Cyrela Credito - FII - Classe Unica;Indefinido;8,76;0,11;0,5
+CXTL11;FI Imobiliario Caixa Seq Logistica Renda;Imóveis Industriais e Logísticos;332,73;0,18;0,2
+CXRI11;Caixa Rio Bravo FF de Invest Imobiliario - FII;Fundo de Fundos;64,89;0,60;0,8
+CXCO11;FII Caixa Imoveis Corporativos - Unica;Lajes Corporativas;68,99;0,91;0,1
+CXCI11;FII Caixa Carteira Imobiliaria - Unica;Indefinido;72,65;0,80;0,1
+CXCE11B;CXCE11B;Lajes Corporativas;44,01;0,43;0,3
+CXCE11;Fundo de Investimento Imobiliario Caixa Cedae Closed Fund;Lajes Corporativas;40,75;0,48;1
+CXAG11;FI Imobilario Caixa Agencias;Agências de Bancos;75,05;0,86;0,7
+CVPR11;CVPR11;Indefinido;-;0,91;0,9
+CTXT11;FI Imobiliario Centro Textil Internacional;Lajes Corporativas;6,50;0,01;0,6
+CSMC11;CSMC11;Indefinido;-;9,21;0,6
+CRFF11;Caixa Rio Bravo FF de Investimento Imobiliario II;Fundo de Fundos;73,28;0,63;0,7
+CRAA11;Sparta Fiagro FI Nas Cad Prod Agro - Imobiliario;Indefinido;96,47;1,20;0,1
+CPUR11;Cap HBC RU FII RL;Misto;10,80;0,10;0,7
+CPTS11;Capitania Securities II FII - Classe A;Papéis;7,85;0,09;0,8
+CPTR11;Capitania Agro Strategies Fiagro Imobiliario Closed Fund;Indefinido;8,29;0,11;0,8
+CPTI11;Capitania Infra Fic Fii Infra Rfcp;Indefinido;85,20;1,00;0,8
+CPSH11;Capitania Shoppings FI Imobiliario;Indefinido;10,97;0,15;0,9
+CPOF11;Capitania Office FI Imobiliario Closed Fund;Misto;110,00;0,30;0,6
+CPLG11;Capitania Logistica FI Imobiliario;Misto;13,15;0,20;0
+CPFO11;CPFO11;Fundo de Fundos;-;31,42;0,9
+CORM11;CORM11;Lajes Corporativas;-;0,77;0,7
+COPP11;COPP11;Lajes Corporativas;103,00;0,75;0,5
+CNES11;FI Imobiliario - FII CENESP;Lajes Corporativas;1,85;0,01;0,2
+CLIN11;Clave Indices de Precos FI Imobiliario;Fundo de Fundos;89,60;0,96;0,8
+CJCT11;Cidade Jardim Continental Tower FII - Unica;Lajes Corporativas;64,00;0,42;0,6
+CIXM11;CIXM11;Misto;9,04;0,15;0,1
+CFII11;CF3 Fundo de Investimento Imobiliario Closed Fund;Indefinido;523,00;40,00;0,1
+CFHI11;FII CF2 CI;Fundo de Desenvolvimento;20,10;26,47;0,6
+CEOC11;FI Imobiliario - Ceo Cyrela Commercial Properties;Lajes Corporativas;45,76;0,49;0,4
+CDII11;Sparta Infra CDI FIFCFII Infra RF;Indefinido;107,50;1,52;1
+CCVA11;Canuma Capital Renda Varejo FI Imobiliario RL;Indefinido;98,97;0,50;0,6
+CCRF11;CCRF11;Papéis;92,50;3,50;0,6
+CCME11;Canuma Capital Multiestrategia FII;Indefinido;9,17;0,08;0,4
+CBOP11;Castello Branco Office Park FI Imob FII - Un;Lajes Corporativas;37,00;0,50;0,8
+CARE11;Brazilian Graveyard and Death Care Services FII;Misto;1,07;0,01;0,2
+CAFE11;CAFE11;Misto;-;1,01;0,5
+CACR11;Cartesia Recebiveis Imobiliarios FII;Papéis;77,76;1,35;0,2
+BZEL11;BZEL11;Misto;-;5,09;0,5
+BTYU11;BTG Pactual You Inc. Des Imob - FI Imobiliario RL;Incorporações;9,42;0,11;0,2
+BTWR11;Btowers Fundo de Investimento Imobiliario;Fundo de Desenvolvimento;105,49;0,95;0,2
+BTSI11;BTSP II Fundo de Investimento Imobiliario Closed Fund;Misto;109,59;0,81;0,9
+BTSG11;BTSP I Fundo de Investimento Imobiliario;Imóveis Industriais e Logísticos;145,92;1,00;0,9
+BTRA11;FI Imobiliario BTG Pactual Terras Agricolas;Fazendas;65,49;0,40;0,2
+BTML11;Barra Malls Fundo de Investimento Imobiliario Cef;Lajes Corporativas;101,37;2,20;0,6
+BTLG11;BTG Pactual Logistica FI Imobiliario;Imóveis Industriais e Logísticos;102,91;0,79;0
+BTHI11;BTG Pactual Hoteis FI Imobiliario - FII;Hotéis;44,95;0,31;0,4
+BTHF11;Btg Pactual Real Estate Hedge Fund Fii Cf;Papéis;8,90;0,09;0,5
+BTCR11;BTCR11;Papéis;88,00;0,90;0,8
+BTCI11;FI Imobiliario-FII BTG Pactual Fundo de CRI;Papéis;9,34;0,10;0,4
+BTAL11;FI Imobiliario BTG Pactual Agro Logistica;Imóveis Industriais e Logísticos;85,46;0,95;0,1
+BTAG11;BTG CAF DC RL;Indefinido;115,00;1,35;0
+BRZP11;Brz Infra Portos Fundo de Investimento Participacao Infra Closed Fund;-;170,09;0,92;0
+BROF11;BRPR Corp Of FII RL;Lajes Corporativas;56,49;0,53;0,2
+BRLA11;BRLA11;Imóveis Industriais e Logísticos;148,00;1,15;0,5
+BRIX11;BRIX11;Indefinido;1.673,35;180,14;0,6
+BRIP11;Brio Real Estate III FII;Fundo de Desenvolvimento;501,94;27,85;0,1
+BRIM11;Brio Real Estate II FI Imobiliario;Fundo de Desenvolvimento;267,67;92,64;0,3
+BRFT11;Bradesco Farm FIDC CPA FDC RL;Misto;85,80;1,21;0,6
+BREV11;BREV11;Lajes Corporativas;105,00;0,58;0,7
+BRCR11;FII BTG Pactual Corporate Office Fund;Lajes Corporativas;48,00;0,41;0
+BRCO11;Bresco - Logistica FII;Imóveis Industriais e Logísticos;117,87;0,87;0,7
+BPRP11;BPRP11;Imóveis Industriais e Logísticos;107,50;0,93;0,5
+BPML11;FI Imobiliario BTG Pactual Shoppings Closed Fund;Shoppings;85,96;0,92;0
+BPLC11;BPLC11;Misto;-;14,42;0,4
+BPFF11;FII ABSOLUTOCI ER;Fundo de Fundos;54,53;2,24;0,3
+BODB11;Bocaina Infra FICF Inc de Inv Infra Renda Fixa CP;Indefinido;7,71;0,10;0,6
+BNFS11;Banrisul Novas Fronteiras FII;Agências de Bancos;72,67;0,75;0,2
+BMLC11;FII BM Brascan Lajes Corporativas FII;Lajes Corporativas;100,00;0,72;0,7
+BLUR11;BLUR11;Papéis;76,03;74,29;0,1
+BLOG11;Bluecap Log Fundo de Investimento Imobiliario;Misto;8,62;0,02;0,5
+BLMR11;BLMR11;Fundo de Fundos;6,78;0,37;1
+BLMO11;VBI Office Fund II - Fundo de Investimento Imobiliario;Lajes Corporativas;90,00;0,53;0,6
+BLMG11;Bluemacaw Logistica FII;Imóveis Industriais e Logísticos;34,65;0,40;0,9
+BLMC11;BLMC11;Papéis;85,75;5,34;0,3
+BLCA11;Bluemacaw Catua Triple A FI Imobiliario;Indefinido;92,60;0,50;0,9
+BIPD11;Brio Real Estate IV - FI Imobiliario;Indefinido;989,33;10,77;0,1
+BINR11;Be In Rio Fund Invest Imob Cef;Indefinido;1.673,35;180,14;0,3
+BINC11;Bradesco FICFIF Renda Fixa Inv Infra CDI CP;Papéis;103,40;1,60;0,9
+BIME11;Brio Multiestrategi Fundo Investimento Imobiliario;Indefinido;6,19;0,08;0
+BIDB11;Inter Infra FICF Inc de Invest em Infraestr RF CP;Indefinido;79,60;1,00;0,9
+BICR11;BICR11;Papéis;35,92;0,36;0,3
+BICE11;Brio Credito Estruturado - FII - Unica;Fundo de Fundos;888,28;3,25;0,6
+BGRB11;BGR B32 FUNDO DE INVESTIMENTO IMOBILIARIO;Lajes Corporativas;101,20;0,81;0,7
+BETW11;BETW11;Indefinido;-;0,46;0,2
+BDIV11;BTG Pactual Infra Dividendos FIP em Infraestrutura;Indefinido;41,65;1,60;0,7
+BDIF11;Btg Pactual Divida Infra Fundo de Invest em Cotas de Fundos Incent de Inv em Infra RF Credito Privado Cf;Indefinido;73,10;0,60;0,4
+BCRI11;Banestes Recebiveis Imobiliarios FII;Papéis;68,72;0,91;0,8
+BCIA11;Bradesco Carteira Imobiliaria Ativa - Fundo de FII;Fundo de Fundos;87,80;0,86;0,6
+BBRC11;BB Renda Corporativa FI Imobiliario FII;Agências de Bancos;100,50;2,10;0,9
+BBIM11;BBIM11;Papéis;-;0,10;0,4
+BBIG11;BB Premium Malls FII RL Unica;Serviços Financeiros Diversos;7,21;0,09;0,2
+BBGO11;BB FI Credito Fiagro Imobiliario Closed Fund;Indefinido;69,63;0,96;0,2
+BBFO11;BB Fundo de Fundos FI Imobiliario;Fundo de Fundos;64,92;0,71;0,2
+BBFI11B;BBFI11B;Lajes Corporativas;1.257,10;634,23;0
+AZPL11;Az Quest PLFI Imob RL;Serviços Financeiros Diversos;7,67;0,08;0,5
+AZPE11;AZ Quest Panorama Credit Estr Fii Cf;Papéis;-;0,11;0,1
+AZIN11;AZ Quest Infra-Yield II FIP Infraestrutura;FIP-IE;101,73;1,40;0,7
+AURB11;Alianza Urban Hub Renda FII;Imóveis Comerciais - Outros;80,60;0,40;0,8
+ATSA11;Hedge Atrium Shopping Santo Andre FII - Unica;Shoppings;57,65;0,77;0,6
+ASRF11;Daycoval Retro I FII RL;Indefinido;10.974,00;256,33;0,9
+ASMT11;ASMT11;Lajes Corporativas;4,10;0,08;0,9
+ARXD11;Hedge Real Estate VI FII;Papéis;7,69;0,09;0,8
+ARTE11;ARTE11;Misto;-;0,09;0,7
+ARRI11;FI Imobiliario Atrio REIT Recebiveis Imobiliarios;Papéis;6,60;0,09;0,3
+AROA11;Aroeira 333 Renda Logistica FI Imobiliario Closed Fund;Imóveis Industriais e Logísticos;1,08;0,01;0,8
+ARCT11;ARCT11;Imóveis Industriais e Logísticos;87,13;0,50;0,9
+APXM11;FI Imobiliario Apex Malls - FII;Shoppings;84,00;0,34;0,6
+APTO11;Navi Residencial Fundo de Investimento Imobiliario;Imóveis Residenciais;8,54;0,09;0,4
+ALZR11;Alianza Trust Renda Imobiliaria FII;Misto;10,79;0,08;0,3
+ALZC11;Alianza Cred Imob FII RL;Papéis;7,79;0,10;0
+ALMI11;FI Imobiliario - FII Torre Almirante;Lajes Corporativas;660,00;4,80;0,1
+AJFI11;AJ Malls Fundo de Investimento Imobiliario;Shoppings;8,08;0,05;1
+AIEC11;Autonomy Edificios Corporativos FII;Lajes Corporativas;53,50;0,34;0
+AGRX11;FIAGRO Exes Araguaia - Fiagro - Imob - Cl Un;Indefinido;8,78;0,12;0,7
+AFHI11;AF Invest Cri FII Recebiveis Imobiliarios;Papéis;95,84;1,01;0,8
+ABCP11;FI Imobiliario Grand Plaza Shopping;Shoppings;82,01;0,65;0,5
+AAZQ11;AZ Quest Sole FI Nas Cadeias Prod do Agro Fiagro I;Indefinido;8,22;0,13;1
+AAGR11;Asset Bank Agro FICPADC RL Mez Jr;Indefinido;116,60;1,46;0,6
