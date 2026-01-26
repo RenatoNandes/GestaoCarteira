@@ -289,18 +289,38 @@ public class Menu {
 
                 case 10 -> {
                     // venda
-                    inv.getCarteira().exibirCarteiraDetalhada();
-                    int max = inv.getCarteira().getAtivos().size();
-                    if (max == 0) {
-                        System.out.println("Carteira vazia.");
+                    var carteira = inv.getCarteira();
+                    var ativosMap = carteira.getAtivos();
+
+                    if (ativosMap.isEmpty()) {
+                        System.out.println("Carteira vazia. Nada para vender.");
                         break;
                     }
-                    int idx = inputUtils.lerOpcao(1, max);
-                    model.ativo.Ativo ativo = inv.getCarteira().getAtivoPorIndice(idx);
-                    int qtd = inputUtils.lerQuantidade();
-                    inv.getCarteira().removerAtivo(ativo, java.math.BigDecimal.valueOf(qtd));
-                    System.out.println("Venda registrada.");
+
+                    // listar ativos da carteira
+                    java.util.List<model.ativo.Ativo> lista = new java.util.ArrayList<>(ativosMap.keySet());
+                    for (int i = 0; i < lista.size(); i++) {
+                        model.ativo.Ativo a = lista.get(i);
+                        java.math.BigDecimal qtdAtual = ativosMap.get(a);
+                        System.out.println((i + 1) + " - " + a + " | Quantidade na carteira: " + qtdAtual);
+                    }
+
+                    // escolher ativo
+                    int escolha = inputUtils.lerOpcao(1, lista.size());
+                    model.ativo.Ativo ativoEscolhido = lista.get(escolha - 1);
+
+                    // ler quantidade para vender (BigDecimal)
+                    java.math.BigDecimal quantidade = inputUtils.lerBigDecimalPositivo("Quantidade para vender (pode ser decimal): ");
+
+                    // vender via Investidor (não chama carteira direto)
+                    try {
+                        inv.vender(ativoEscolhido, quantidade);
+                        System.out.println("Venda registrada.");
+                    } catch (Exception e) {
+                        System.out.println("Falha na venda: " + e.getMessage());
+                    }
                 }
+
                 case 11 -> {
                     String caminho = infoUtils.lerTexto("Informe o caminho do arquivo CSV de movimentações");
                     try {
