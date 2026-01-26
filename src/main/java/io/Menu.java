@@ -266,13 +266,27 @@ public class Menu {
                         System.out.println("Nenhum ativo disponível.");
                         break;
                     }
-                    for (int i = 0; i < lista.size(); i++) System.out.println((i + 1) + " - " + lista.get(i));
+
+                    // escolher ativo
+                    for (int i = 0; i < lista.size(); i++) {
+                        System.out.println((i + 1) + " - " + lista.get(i));
+                    }
                     int escolha = inputUtils.lerOpcao(1, lista.size());
-                    model.ativo.Ativo ativo = lista.get(escolha - 1);
-                    int qtd = inputUtils.lerQuantidade();
-                    inv.getCarteira().adicionarAtivo(ativo, java.math.BigDecimal.valueOf(qtd));
-                    System.out.println("Compra registrada.");
+                    model.ativo.Ativo ativoEscolhido = lista.get(escolha - 1);
+
+                    // ler quantidade (BigDecimal) e preço de execução (BigDecimal)
+                    BigDecimal quantidade = inputUtils.lerBigDecimalPositivo("Quantidade (pode ser decimal, ex 5.2): ");
+                    BigDecimal precoExec = inputUtils.lerBigDecimalPositivo("Preço de execução (na moeda do ativo): ");
+
+                    // comprar via Investidor (aplica regras de perfil/qualificado)
+                    try {
+                        inv.comprar(ativoEscolhido, quantidade, precoExec);
+                        System.out.println("Compra registrada.");
+                    } catch (Exception e) {
+                        System.out.println("Falha na compra: " + e.getMessage());
+                    }
                 }
+
                 case 10 -> {
                     // venda
                     inv.getCarteira().exibirCarteiraDetalhada();
