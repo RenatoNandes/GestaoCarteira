@@ -220,7 +220,7 @@ public class Menu {
             System.out.println("1 - Editar informações do investidor");
             System.out.println("2 - Excluir investidor");
             System.out.println("3 - Exibir ativos do investidor");
-            System.out.println("4 - Exibir valor total gasto (não implementado se Carteira não guarda preço médio)");
+            System.out.println("4 - Exibir valor total gasto ");
             System.out.println("5 - Exibir valor total atual");
             System.out.println("6 - Exibir porcentagens renda fixa / variável");
             System.out.println("7 - Exibir porcentagens nacional / internacional");
