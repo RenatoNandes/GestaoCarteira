@@ -51,9 +51,13 @@ public class Stock extends Ativo {
     }
 
     @Override
-    public BigDecimal converterParaReal() {
-        return getPrecoAtual().multiply(fatorConversao);
+    public BigDecimal converterValorParaReal(BigDecimal valor) {
+        if (valor == null) {
+            throw new AtivoInvalidoException("Valor para conversão não pode ser nulo.");
+        }
+        return valor.multiply(fatorConversao);
     }
+
 
     @Override
     public String toString() {
