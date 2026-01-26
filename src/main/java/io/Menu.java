@@ -460,18 +460,32 @@ public class Menu {
 
 
     private void venderAtivoDoInvestidor(Investidor inv) {
-        inv.getCarteira().exibirCarteiraDetalhada();
-        int max = inv.getCarteira().getAtivos().size();
-        if (max == 0) {
+        var carteira = inv.getCarteira();
+        var ativosMap = carteira.getAtivos();
+        if (ativosMap.isEmpty()) {
             System.out.println("Carteira vazia.");
             return;
         }
-        int indice = inputUtils.lerOpcao(1, max);
-        Ativo ativo = inv.getCarteira().getAtivoPorIndice(indice);
-        int qtd = inputUtils.lerQuantidade();
-        inv.getCarteira().removerAtivo(ativo, BigDecimal.valueOf(qtd));
-        System.out.println("Venda registrada.");
+
+        java.util.List<Ativo> lista = new java.util.ArrayList<>(ativosMap.keySet());
+        for (int i = 0; i < lista.size(); i++) {
+            Ativo a = lista.get(i);
+            System.out.println((i + 1) + " - " + a + " | Quantidade: " + ativosMap.get(a));
+        }
+
+        int escolha = inputUtils.lerOpcao(1, lista.size());
+        Ativo ativo = lista.get(escolha - 1);
+
+        BigDecimal quantidade = inputUtils.lerBigDecimalPositivo("Quantidade para vender: ");
+
+        try {
+            inv.vender(ativo, quantidade);
+            System.out.println("Venda registrada.");
+        } catch (Exception e) {
+            System.out.println("Falha na venda: " + e.getMessage());
+        }
     }
+
 
     private void salvarRelatorioInvestidor(model.investidor.Investidor inv) {
         System.out.println("\n===== SALVAR RELATÓRIO DO INVESTIDOR =====");
