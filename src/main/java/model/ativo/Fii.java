@@ -45,13 +45,18 @@ public class Fii extends Ativo {
         return ultimoDividendo;
     }
 
-    public BigDecimal getTaxaAdministracao() {
-        return taxaAdministracao;
-    }
-
     // metodo que exibe a taxa concatenada + %
     public String getTaxaAdministracaoFormatada() {
         return taxaAdministracao.toPlainString() + "%";
     }
 
+    @Override
+    public String toString() {
+        return String.format("FII: %s - %s | Segmento: %s | Último dividendo: R$ %.2f | Taxa adm: %s",
+                getTicker(),
+                getNome(),
+                getSegmento(),
+                getUltimoDividendo(),
+                getTaxaAdministracaoFormatada()); // esse método deve retornar algo como "0.5%"
+    }
 }

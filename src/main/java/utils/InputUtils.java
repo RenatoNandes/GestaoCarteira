@@ -20,30 +20,25 @@ public class InputUtils {
                     return v;
                 }
             } catch (NumberFormatException ignored) {
-            }
-            System.out.print("Entrada inválida. Escolha entre " + min + " e " + max + ": ");
-        }
-    }
-    public int lerQuantidade() {
-        while (true) {
-            try {
-                int valor = Integer.parseInt(scanner.nextLine());
-                if (valor <= 0) {
-                    System.out.print("Quantidade deve ser maior que zero. Digite novamente: ");
-                } else {
-                    return valor;
-                }
-            } catch (NumberFormatException e) {
-                System.out.print("Entrada inválida. Digite um número inteiro: ");
+                System.out.print("Entrada inválida. Escolha entre " + min + " e " + max + ": ");
             }
         }
     }
 
-    public boolean lerBoolean(String prompt) {
-        System.out.print(prompt + " (s/n): ");
-        String s = scanner.nextLine().trim().toLowerCase();
-        return s.startsWith("s");
+    public boolean lerBoolean(String verifica) {
+        while (true) {
+            System.out.print(verifica + " (s/n): ");
+            String s = scanner.nextLine().trim().toLowerCase();
+            if (s.equals("s")) {
+                return true;
+            } else if (s.equals("n")) {
+                return false;
+            } else {
+                System.out.print("Entrada inválida. Escolha entre Sim(s) e Não(n): ");
+            }
+        }
     }
+
     public BigDecimal lerBigDecimalPositivo(String msg) {
         while (true) {
             System.out.print(msg);

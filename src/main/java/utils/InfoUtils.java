@@ -29,12 +29,12 @@ public class InfoUtils {
     // CPF (9 dígitos numéricos)
     public String lerCPF() {
         while (true) {
-            System.out.print("CPF (9 dígitos): ");
+            System.out.print("CPF (11 dígitos): ");
             String entrada = scanner.nextLine().trim();
-            if (entrada.matches("\\d{9}")) {
+            if (entrada.matches("\\d{11}")) {
                 return entrada;
             }
-            System.out.println("CPF inválido. Digite exatamente 9 números.");
+            System.out.println("CPF inválido. Digite exatamente 11 números.");
         }
     }
 
@@ -145,25 +145,25 @@ public class InfoUtils {
         return new BigDecimal(s);
     }
 
-    public String lerTexto(String prompt) {
-        System.out.print(prompt + ": ");
+    public String lerTexto(String texto) {
+        System.out.print(texto + ": ");
         return scanner.nextLine().trim();
     }
 
-    public BigDecimal lerBigDecimal(String prompt) {
-        System.out.print(prompt + ": ");
+    public BigDecimal lerBigDecimal(String bigD) {
+        System.out.print(bigD + ": ");
         String s = scanner.nextLine().trim();
         return new BigDecimal(s);
     }
 
-    public BigDecimal lerBigDecimalOpcional(String prompt) {
-        System.out.print(prompt + " (enter para pular): ");
+    public BigDecimal lerBigDecimalOpcional(String bigDOpc) {
+        System.out.print(bigDOpc + " (enter para pular): ");
         String s = scanner.nextLine().trim();
         return s.isEmpty() ? null : new BigDecimal(s);
     }
 
-    public TipoRendimento lerTipoRendimento(String prompt) {
-        System.out.print(prompt + " (DIGITE PREFIXADO/IPCA/SELIC): ");
+    public TipoRendimento lerTipoRendimento(String rendimento) {
+        System.out.print(rendimento + " (DIGITE PREFIXADO/IPCA/SELIC): ");
         String s = scanner.nextLine().trim().toUpperCase();
         return TipoRendimento.valueOf(s); // trate IllegalArgumentException se quiser validação
     }
