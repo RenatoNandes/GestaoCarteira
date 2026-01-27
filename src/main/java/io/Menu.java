@@ -155,7 +155,6 @@ public class Menu {
 
     private void editarAtivo() {
         List<Ativo> lista = ativoManager.getAtivos();
-        System.out.print("Escolha uma opção: ");
         if (lista.isEmpty()) {
             System.out.println("Nenhum ativo disponível.");
             return;
@@ -163,6 +162,7 @@ public class Menu {
         for (int i = 0; i < lista.size(); i++) {
             System.out.println((i + 1) + " - " + lista.get(i));
         }
+        System.out.print("Escolha uma opção: ");
         int escolha = inputUtils.lerOpcao(1, lista.size());
         BigDecimal novoPreco = infoUtils.lerPreco();
         if (novoPreco == null || novoPreco.compareTo(BigDecimal.ZERO) <= 0) {
@@ -175,7 +175,6 @@ public class Menu {
 
     private void excluirAtivo() {
         List<Ativo> lista = ativoManager.getAtivos();
-        System.out.print("Escolha uma opção: ");
         if (lista.isEmpty()) {
             System.out.println("Nenhum ativo disponível.");
             return;
@@ -183,6 +182,7 @@ public class Menu {
         for (int i = 0; i < lista.size(); i++) {
             System.out.println((i + 1) + " - " + lista.get(i));
         }
+        System.out.print("Escolha uma opção: ");
         int escolha = inputUtils.lerOpcao(1, lista.size());
         Ativo alvo = lista.get(escolha - 1);
         // propagar remoção nas carteiras
@@ -318,10 +318,8 @@ public class Menu {
         String caminho = infoUtils.lerTexto("Informe o caminho do arquivo CSV");
         try {
             investidorManager.carregarInvestidoresDeArquivo(caminho);
-            System.out.println("Investidores carregados com sucesso.");
-        } catch (UnsupportedOperationException u) {
-            System.out.println("Funcionalidade não implementada: " + u.getMessage());
-        } catch (Exception e) {
+            System.out.println("Ação concluída.");
+        } catch (IllegalArgumentException e) {
             System.out.println("Erro ao carregar investidores: " + e.getMessage());
         }
     }
@@ -357,10 +355,14 @@ public class Menu {
     }
 
     private void editarInvestidor(Investidor inv) {
-        String novoNome = infoUtils.lerNome("Novo nome (enter para manter)");
-        BigDecimal novoPatrimonio = infoUtils.lerBigDecimalOpcional("Novo patrimônio (vazio para manter)");
+        String novoNome = infoUtils.lerNome("Novo nome");
+        BigDecimal novoPatrimonio = infoUtils.lerBigDecimalOpcional("Novo patrimônio");
+        if (novoPatrimonio != null && novoPatrimonio.compareTo(BigDecimal.ZERO) < 0) {
+            System.out.println("Patrimônio não pode ser negativo. Alteração cancelada.");
+            return;
+        }
 
-        if ((novoNome == null || novoNome.isBlank()) && novoPatrimonio == null) {
+        if (novoPatrimonio == null) {
             System.out.println("Nada a alterar.");
             return;
         }
@@ -423,7 +425,7 @@ public class Menu {
         for (var entry : mapa.entrySet()) {
             Ativo ativo = entry.getKey();
             var qtd = entry.getValue();
-            BigDecimal valorGasto = inv.getCarteira().getValorGastoPorAtivo(ativo); // método abaixo
+            BigDecimal valorGasto = inv.getCarteira().getValorGastoPorAtivo(ativo);
             BigDecimal valorAtual = ativo.converterParaReal().multiply(qtd);
             sb.append("    {\n");
             sb.append("      \"identificador\": \"").append(ativo.getTicker()).append("\",\n");
@@ -462,6 +464,7 @@ public class Menu {
         for (int i = 0; i < lista.size(); i++) {
             System.out.println((i + 1) + " - " + lista.get(i));
         }
+        System.out.print("Escolha uma opção: ");
         int escolha = inputUtils.lerOpcao(1, lista.size());
         Ativo ativoEscolhido = lista.get(escolha - 1);
 
@@ -492,7 +495,7 @@ public class Menu {
             Ativo a = lista.get(i);
             System.out.println((i + 1) + " - " + a + " | Quantidade: " + ativosMap.get(a));
         }
-
+        System.out.print("Escolha uma opção: ");
         int escolha = inputUtils.lerOpcao(1, lista.size());
         Ativo ativo = lista.get(escolha - 1);
 
