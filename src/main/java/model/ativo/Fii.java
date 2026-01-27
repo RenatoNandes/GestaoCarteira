@@ -57,6 +57,6 @@ public class Fii extends Ativo {
                 getNome(),
                 getSegmento(),
                 getUltimoDividendo(),
-                getTaxaAdministracaoFormatada()); // esse método deve retornar algo como "0.5%"
+                getTaxaAdministracaoFormatada());
     }
 }

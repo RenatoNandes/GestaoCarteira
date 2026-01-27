@@ -163,9 +163,15 @@ public class InfoUtils {
     }
 
     public TipoRendimento lerTipoRendimento(String rendimento) {
-        System.out.print(rendimento + " (DIGITE PREFIXADO/IPCA/SELIC): ");
-        String s = scanner.nextLine().trim().toUpperCase();
-        return TipoRendimento.valueOf(s); // trate IllegalArgumentException se quiser validação
+        while (true) {
+            System.out.print(rendimento + " (DIGITE PREFIXADO/IPCA/SELIC): ");
+            String s = scanner.nextLine().trim().toUpperCase();
+            try {
+                return TipoRendimento.valueOf(s);
+            } catch (IllegalArgumentException e) {
+                System.out.println("Valor inválido. Digite exatamente PREFIXADO, IPCA ou SELIC.");
+            }
+        }
     }
 
 }

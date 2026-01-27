@@ -138,7 +138,7 @@ public class Carteira {
     }
 
     public BigDecimal getValorTotalAtual() {
-        return valorTotalAtual(); // apenas delega para o método já existente
+        return valorTotalAtual();
     }
 
     // retorna o valor gasto total (soma de valorGastoPorAtivo)
@@ -161,7 +161,7 @@ public class Carteira {
         for (Map.Entry<Ativo, BigDecimal> entry : ativos.entrySet()) {
             Ativo ativo = entry.getKey();
             BigDecimal qtd = entry.getValue();
-            BigDecimal valorGasto = getValorGastoPorAtivo(ativo); // já implementado
+            BigDecimal valorGasto = getValorGastoPorAtivo(ativo);
             BigDecimal valorAtual = ativo.converterParaReal().multiply(qtd);
             System.out.printf("%-12s %-10s %-18s %-18s%n",
                     ativo.getTicker(),

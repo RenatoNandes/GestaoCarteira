@@ -1,5 +1,6 @@
 package data;
 
+import exception.MovimentacaoInvalidaException;
 import model.carteira.Carteira;
 import model.investidor.Institucional;
 import model.investidor.Investidor;
@@ -49,8 +50,8 @@ public class InvestidorManager {
                     var qtd = carteira.getAtivos().get(ativo);
                     carteira.removerAtivo(ativo, qtd); // usa removerAtivo(Ativo, BigDecimal)
                 }
-            } catch (Exception ignored) {
-                // se algo falhar continua para os outros investidores
+            } catch (MovimentacaoInvalidaException e) {
+                System.out.println("Erro ao remover ativo da carteira de " + inv.getNome() + ": " + e.getMessage());
             }
         }
     }
