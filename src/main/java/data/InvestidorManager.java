@@ -1,5 +1,6 @@
 package data;
 
+import model.carteira.Carteira;
 import model.investidor.Institucional;
 import model.investidor.Investidor;
 import model.ativo.Ativo;
@@ -53,40 +54,87 @@ public class InvestidorManager {
             }
         }
     }
+
     public void carregarInvestidoresDeArquivo(String caminho) {
         List<String[]> linhas = utils.CsvReader.lerCsv(caminho);
-        if (linhas == null || linhas.isEmpty()) return;
+        if (!linhas.isEmpty()) {
+            linhas.removeFirst(); // remove cabeçalho
+        }
 
         for (String[] cols : linhas) {
             try {
-                // Exemplo de layout esperado (ajuste conforme CSV):
-                // tipo;nome;identificador;telefone;data;patrimonio;campoExtra...
-                // tipo = "PF" ou "PJ"
-                String tipo = cols.length > 0 ? cols[0].trim().toUpperCase() : "";
-                String nome = cols.length > 1 ? cols[1].trim() : "";
-                String identificador = cols.length > 2 ? cols[2].trim() : "";
-                String telefone = cols.length > 3 ? cols[3].trim() : "";
-                java.time.LocalDate data = (cols.length > 4 && !cols[4].trim().isEmpty())
-                        ? java.time.LocalDate.parse(cols[4].trim()) : null;
-                java.math.BigDecimal patrimonio = (cols.length > 5 && !cols[5].trim().isEmpty())
-                        ? new java.math.BigDecimal(cols[5].trim().replace(",", ".")) : java.math.BigDecimal.ZERO;
+                // Nome
+                String nome = cols.length > 0 ? cols[0].trim() : "";
+                if (nome.isEmpty()) throw new IllegalArgumentException("Nome não pode ser vazio.");
 
-                if ("PF".equals(tipo) || "PESSOA_FISICA".equals(tipo) || "F".equals(tipo)) {
-                    // perfil padrão conservador se não informado
-                    model.investidor.PerfilInvestimento perfil = model.investidor.PerfilInvestimento.CONSERVADOR;
-                    model.investidor.Investidor inv = new model.investidor.PessoaFisica(nome, identificador, data, telefone, null, patrimonio, perfil);
+                // CPF ou CNPJ
+                String documento = cols.length > 1 ? cols[1].trim() : "";
+                if (documento.isEmpty()) throw new IllegalArgumentException("CPF/CNPJ não pode ser vazio.");
+
+                // Data de nascimento/fundação
+                java.time.LocalDate nascimento = (cols.length > 2 && !cols[2].trim().isEmpty())
+                        ? java.time.LocalDate.parse(cols[2].trim())
+                        : null;
+
+                // Telefone
+                String telefone = cols.length > 3 ? cols[3].trim() : "";
+
+                // Endereço detalhado
+                String rua    = cols.length > 4 ? cols[4].trim() : "";
+                String numero = cols.length > 5 ? cols[5].trim() : "";
+                String bairro = cols.length > 6 ? cols[6].trim() : "";
+                String cep    = cols.length > 7 ? cols[7].trim() : "";
+                String cidade = cols.length > 8 ? cols[8].trim() : "";
+                String estado = cols.length > 9 ? cols[9].trim() : "";
+
+                model.investidor.Endereco endereco = new model.investidor.Endereco(
+                        rua, numero, bairro, cep, cidade, estado
+                );
+
+                // Patrimônio
+                java.math.BigDecimal patrimonio = (cols.length > 10 && !cols[10].trim().isEmpty())
+                        ? new java.math.BigDecimal(cols[10].trim().replace(",", "."))
+                        : java.math.BigDecimal.ZERO;
+
+                // Campo extra: Perfil (PF) ou Razão Social (PJ)
+                String campoExtra = cols.length > 11 ? cols[11].trim() : "";
+
+                // Decidir se é PF ou PJ pelo documento
+                if (documento.matches("\\d{11}")) {
+                    // Pessoa Física
+                    model.investidor.PerfilInvestimento perfil;
+                    try {
+                        perfil = campoExtra.isEmpty()
+                                ? model.investidor.PerfilInvestimento.CONSERVADOR
+                                : model.investidor.PerfilInvestimento.valueOf(campoExtra.toUpperCase());
+                    } catch (IllegalArgumentException e) {
+                        perfil = model.investidor.PerfilInvestimento.CONSERVADOR;
+                    }
+
+                    model.investidor.Investidor inv = new model.investidor.PessoaFisica(
+                            nome, documento, nascimento, telefone, endereco, patrimonio, perfil
+                    );
                     adicionarInvestidor(inv);
+
+                } else if (documento.matches("\\d{14}")) {
+                    // Institucional
+                    String razaoSocial = campoExtra.isEmpty() ? nome : campoExtra;
+
+                    model.investidor.Investidor inv = new model.investidor.Institucional(
+                            nome, documento, nascimento, telefone, endereco, patrimonio, razaoSocial
+                    );
+                    adicionarInvestidor(inv);
+
                 } else {
-                    // institucional: pode ter razao social em cols[6]
-                    String razao = cols.length > 6 ? cols[6].trim() : "";
-                    model.investidor.Investidor inv = new model.investidor.Institucional(nome, identificador, data, telefone, null, patrimonio, razao);
-                    adicionarInvestidor(inv);
+                    throw new IllegalArgumentException("Documento inválido (CPF deve ter 11 dígitos, CNPJ 14).");
                 }
+
             } catch (Exception e) {
                 System.out.println("Linha de investidor ignorada (erro): " + e.getMessage());
             }
         }
     }
+
     public void atualizarInvestidor(String identificador, String novoNome, java.math.BigDecimal novoPatrimonio) {
         Investidor antigo = buscarPorIdentificador(identificador);
         if (antigo == null) throw new IllegalArgumentException("Investidor não encontrado: " + identificador);
@@ -120,8 +168,8 @@ public class InvestidorManager {
         } catch (Exception e) {
             throw new RuntimeException("Erro ao criar novo investidor: " + e.getMessage(), e);
         }
-        var carteiraAntiga = antigo.getCarteira();
-        var carteiraNova = novo.getCarteira();
+        Carteira carteiraAntiga = antigo.getCarteira();
+        Carteira carteiraNova = novo.getCarteira();
 
         for (var entry : carteiraAntiga.getAtivos().entrySet()) {
             Ativo ativo = entry.getKey();
