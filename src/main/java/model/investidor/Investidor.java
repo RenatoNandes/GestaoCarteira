@@ -80,14 +80,6 @@ public abstract class Investidor {
         carteira.removerAtivo(ativo, quantidade);
     }
 
-    public void comprar(Ativo ativo, int quantidade) {
-        comprar(ativo, BigDecimal.valueOf(quantidade), ativo.getPrecoAtual());
-    }
-
-    public void vender(Ativo ativo, int quantidade) {
-        vender(ativo, BigDecimal.valueOf(quantidade));
-    }
-
     @Override
     public String toString() {
         return String.format("Investidor: %s (%s) - Nascimento: %s - Tel: %s - Endereço: %s - Patrimônio: R$ %s",

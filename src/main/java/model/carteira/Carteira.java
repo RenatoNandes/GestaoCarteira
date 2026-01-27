@@ -39,7 +39,6 @@ public class Carteira {
     }
 
     // Remove ativos (venda)
-
     public void removerAtivo(Ativo ativo, BigDecimal quantidade) {
         if (ativo == null) throw new IllegalArgumentException("Ativo não pode ser nulo.");
 
