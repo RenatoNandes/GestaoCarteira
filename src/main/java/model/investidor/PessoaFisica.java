@@ -18,10 +18,6 @@ public class PessoaFisica extends Investidor {
         this.perfil = perfil;
     }
 
-    public PerfilInvestimento getPerfil() {
-        return perfil;
-    }
-
     public PerfilInvestimento getPerfilInvestimento() {
         return this.perfil;
     }

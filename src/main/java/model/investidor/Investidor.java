@@ -13,7 +13,7 @@ public abstract class Investidor {
     private final String telefone;
     private final LocalDate dataNascimento;
     private final Endereco endereco;
-    private BigDecimal patrimonio;
+    private final BigDecimal patrimonio;
     private final Carteira carteira;
 
     public Investidor(String nome, String identificador, LocalDate dataNascimento,
@@ -63,13 +63,6 @@ public abstract class Investidor {
 
     public Carteira getCarteira() {
         return carteira;
-    }
-
-    public void atualizarPatrimonio(BigDecimal novoValor) {
-        if (novoValor.compareTo(BigDecimal.ZERO) < 0) {
-            throw new IllegalArgumentException("Patrimônio não pode ser negativo.");
-        }
-        this.patrimonio = novoValor;
     }
 
     public void comprar(Ativo ativo, BigDecimal quantidade, BigDecimal precoExecucao) {

@@ -38,18 +38,6 @@ public class Stock extends Ativo {
         this.fatorConversao = fatorConversao;
     }
 
-    public String getBolsaNegociacao() {
-        return bolsaNegociacao;
-    }
-
-    public String getSetor() {
-        return setor;
-    }
-
-    public BigDecimal getFatorConversao() {
-        return fatorConversao;
-    }
-
     @Override
     public BigDecimal converterValorParaReal(BigDecimal valor) {
         if (valor == null) {

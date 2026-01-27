@@ -14,10 +14,6 @@ public class Acao extends Ativo {
         this.tipoAcao = definirTipoPeloTicker(ticker);
     }
 
-    public TipoAcao getTipoAcao() {
-        return tipoAcao;
-    }
-
     private TipoAcao definirTipoPeloTicker(String ticker) {
         String t = ticker.trim().toUpperCase();
 

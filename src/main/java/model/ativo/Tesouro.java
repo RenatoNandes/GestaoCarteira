@@ -32,14 +32,6 @@ public class Tesouro extends Ativo {
         this.dataVencimento = dataVencimento;
     }
 
-    public TipoRendimento getTipoRendimento() {
-        return tipoRendimento;
-    }
-
-    public LocalDate getDataVencimento() {
-        return dataVencimento;
-    }
-
     @Override
     public String toString() {
         return String.format("Tesouro: %s (%s) - Tipo: %s - Vencimento: %s - R$ %s",

@@ -9,7 +9,6 @@ import model.investidor.Origem;
 import java.math.RoundingMode;
 import java.math.BigDecimal;
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 public class Carteira {
@@ -138,26 +137,6 @@ public class Carteira {
         return ativos;
     }
 
-    public void exibirCarteira() {
-        if (ativos.isEmpty()) {
-            System.out.println("Carteira vazia.");
-            return;
-        }
-        int i = 1;
-        for (Map.Entry<Ativo, BigDecimal> entry : ativos.entrySet()) {
-            System.out.println(i++ + " - " + entry.getKey() + " | Quantidade: " + entry.getValue());
-        }
-    }
-
-    public Ativo getAtivoPorIndice(int indice) {
-        int i = 1;
-        for (Ativo ativo : ativos.keySet()) {
-            if (i == indice) return ativo;
-            i++;
-        }
-        throw new IllegalArgumentException("Índice inválido.");
-    }
-
     public BigDecimal getValorTotalAtual() {
         return valorTotalAtual(); // apenas delega para o método já existente
     }
@@ -171,60 +150,6 @@ public class Carteira {
     // retorna o valor gasto para um ativo específico (ou ZERO)
     public java.math.BigDecimal getValorGastoPorAtivo(Ativo ativo) {
         return valorGastoPorAtivo.getOrDefault(ativo, java.math.BigDecimal.ZERO);
-    }
-
-    public void carregarMovimentacoesDeArquivo(String caminho, data.AtivoManager ativoManager) {
-        List<String[]> linhas = utils.CsvReader.lerCsv(caminho);
-        if (linhas == null || linhas.isEmpty()) return;
-
-        for (String[] cols : linhas) {
-            try {
-                String tipo = cols.length > 0 ? cols[0].trim().toUpperCase() : "";
-                String ticker = cols.length > 1 ? cols[1].trim() : "";
-                String qtdStr = cols.length > 2 ? cols[2].trim() : "0";
-                String precoStr = cols.length > 3 ? cols[3].trim() : "";
-                java.math.BigDecimal quantidade = qtdStr.isEmpty() ? java.math.BigDecimal.ZERO
-                        : new java.math.BigDecimal(qtdStr.replace(",", "."));
-                java.math.BigDecimal preco = precoStr.isEmpty() ? null
-                        : new java.math.BigDecimal(precoStr.replace(",", "."));
-
-                // procura ativo na carteira
-                Ativo alvo = null;
-                for (Ativo a : ativos.keySet()) {
-                    if (a.getTicker().equalsIgnoreCase(ticker)) {
-                        alvo = a;
-                        break;
-                    }
-                }
-                // se não achou na carteira, tenta no AtivoManager
-                if (alvo == null && ativoManager != null) {
-                    for (Ativo a : ativoManager.getAtivos()) {
-                        if (a.getTicker().equalsIgnoreCase(ticker)) {
-                            alvo = a;
-                            break;
-                        }
-                    }
-                }
-
-                if (alvo == null) {
-                    System.out.println("Ativo não encontrado para ticker: " + ticker + " (linha ignorada)");
-                    continue;
-                }
-
-                if ("C".equals(tipo)) {
-                    BigDecimal precoUsado = (preco != null ? preco : alvo.getPrecoAtual());
-                    adicionarAtivo(alvo, quantidade, precoUsado);
-                }
-
-             else if ("V".equals(tipo)) {
-                    removerAtivo(alvo, quantidade);
-                } else {
-                    System.out.println("Tipo de movimentação inválido: " + tipo + " (linha ignorada)");
-                }
-            } catch (Exception e) {
-                System.out.println("Erro ao processar movimentação: " + e.getMessage());
-            }
-        }
     }
 
     public void exibirCarteiraDetalhada() {

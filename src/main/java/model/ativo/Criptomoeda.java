@@ -8,7 +8,6 @@ import java.math.BigDecimal;
 public class Criptomoeda extends Ativo {
 
     private final String algoritmoConsenso;
-    private final BigDecimal quantidadeMaxima; // pode ser null (ex: ETH)
     private final BigDecimal fatorConversao;   // ex: dólar -> real
 
     public Criptomoeda(String nome,
@@ -34,20 +33,7 @@ public class Criptomoeda extends Ativo {
         }
 
         this.algoritmoConsenso = algoritmoConsenso.trim();
-        this.quantidadeMaxima = quantidadeMaxima;
         this.fatorConversao = fatorConversao;
-    }
-
-    public String getAlgoritmoConsenso() {
-        return algoritmoConsenso;
-    }
-
-    public BigDecimal getQuantidadeMaxima() {
-        return quantidadeMaxima;
-    }
-
-    public BigDecimal getFatorConversao() {
-        return fatorConversao;
     }
 
     @Override
