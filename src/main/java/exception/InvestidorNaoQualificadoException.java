@@ -1,7 +1,7 @@
 package exception;
 
 public class InvestidorNaoQualificadoException extends RuntimeException {
-    public InvestidorNaoQualificadoException(String message) {
-        super(message);
+    public InvestidorNaoQualificadoException(String msg) {
+        super(msg);
     }
 }
